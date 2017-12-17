@@ -1,2 +1,2 @@
 # pinksite
-This site for training
+Hello!)This site for training. 
