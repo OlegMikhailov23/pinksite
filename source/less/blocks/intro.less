@@ -1,0 +1,59 @@
+@main-color-dark: #1d2631;
+@font-color-white: #ffffff;
+
+
+@import "../mixin.less";
+
+.intro__wrapper {
+    background: url("../../img/bg-back-mobile@1x.jpg");
+}
+
+.intro__wrapper-bottom {
+    padding-top: 29px;
+    padding-bottom: 35px;
+    background-color: @main-color-dark;
+    text-align: center;
+}
+
+.download-app__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    .padding-top-bottom (15px,
+    15px);
+    .padding-left-right (36px,
+    36px);
+    .font-size ( 18px,
+    18px);
+    color: @font-color-white;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.download-app__logo {
+    display: inline-block;
+    .size(60px,
+    60px);
+}
+
+.download-app__logo-apple {
+    background: url("../../img/logo-apple.svg") center no-repeat;
+}
+
+.download-app__logo-android {
+    background: url("../../img/logo-android.svg") center no-repeat;
+}
+
+.download-app__logo-windows {
+    background: url("../../img/logo-microsoft.svg") center no-repeat;
+}
+
+.download-app__annotation {
+    color: @font-color-white;
+    font-family: inherit;
+    .font-size(14px,
+    24px);
+    font-weight: 300;
+}

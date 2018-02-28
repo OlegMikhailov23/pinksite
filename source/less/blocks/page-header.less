@@ -3,9 +3,12 @@
 .page-header {
     background-color: @page-header-bg;
     padding-top: 20px;
-    padding-left: 20px;
+    position: relative;
 }
 
-.page-header__logo {
-    display: inline-block;
+.page-header__logo-link {
+    display: block;
+    .size(75px, 23px);
+    font-size: 0;
+    background: url("../../img/logo-pink-white-mobile.svg") center no-repeat;
 }

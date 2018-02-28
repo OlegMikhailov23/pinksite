@@ -1,0 +1,59 @@
+@main-font-color: #283645;
+@advantages-bg: #f2f2f2;
+@advantages-h3-color: #000000;
+
+
+@import "../mixin.less";
+
+.advantages__wrapper {
+    .padding-top-bottom(44px);
+}
+
+
+
+.advantages__quote-question, .advantages__quote-answer {
+    margin: 0;
+    padding: 0;
+    .font-size(24px, 26px);
+    font-weight: 300;
+    text-align: center;
+    font-family: inherit;
+    color: @main-font-color;
+}
+
+.advantages__question {
+    padding-bottom: 30px;
+}
+
+.advantages__item-list {
+    background-color: @advantages-bg;
+}
+
+.advantages__item h3 {
+    .zero-style();
+    .font-size(18px, 24px);
+    font-weight: 700;
+    font-family: inherit;
+    color: @advantages-h3-color;
+}
+
+.advantages__item p {
+    .zero-style();
+    .font-size (14px, 24px);
+    color: inherit;
+    font-family: inherit;
+}
+
+.advantages__bottom-iphone {
+    .size(157px, 320px);
+    background: url("../../img/iphone-screen-mobile@1x.png")
+}
+
+.advantages__quote-triangle {
+    background: url("../../img/bg-triangle-white.svg") center no-repeat;
+    min-height: 95px;
+    width: 100%;
+    transform: rotate(180deg);
+    opacity: 0.03;
+}
+
