@@ -1,0 +1,47 @@
+@main-font-color: #283645;
+@advantages-bg: #f2f2f2;
+@contact-font-color: #d22856;
+@font-color-white: #ffffff;
+
+@import "../mixin.less";
+
+.gallery__item {
+    .padding-left-right (20px, 20px);
+}
+
+.gallery__wrapper {
+    color: @main-font-color;
+}
+
+.gallery__title p {
+   .font-size (14px, 30px);
+   font-family: inherit;
+}
+
+.gallery__comment {
+    background-color: @advantages-bg;
+  & p {
+      .zero-style();
+      .font-size (14px, 24px);
+  }
+}
+
+.gallery__comment-auhor {
+    .font-size (14px, 24px);
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.gallery__comment-time-ago {
+    .font-size (12px, 24px);
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.gallery__likes-counter {
+    .font-size (12px, 24px);
+    color: @contact-font-color;
+    text-transform: uppercase;
+}
+
+

@@ -691,8 +691,17 @@ html {
   font-weight: 400;
   font-family: inherit;
 }
+.form__name-fields,
+.form__proofs,
+.form__contacts,
+.form__whatapp,
+.form__textfield {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .form__name-fields label,
-.form__contacts label {
+.form__contacts label,
+.form__textfield p {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -703,6 +712,26 @@ html {
   color: #d22856;
   text-transform: uppercase;
   font-family: inherit;
+}
+.form__proofs {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f2f2f2;
+}
+.form__proofs ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+}
+.form__whatapp {
+  background-color: #f2f2f2;
 }
 .form__proofs p,
 .form__whatapp p {
@@ -717,8 +746,12 @@ html {
   text-transform: uppercase;
   font-family: inherit;
 }
+.form__name-field,
 .form__proofs-item label,
-.form__whatapp label {
+.form__whatapp label,
+.form__tel-field,
+.form__email-field,
+.form__textfield textarea {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -728,4 +761,83 @@ html {
   line-height: 30px;
   font-family: inherit;
   color: #283645;
+}
+.form__textfield textarea {
+  resize: none;
+}
+.form__btn {
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  font-family: inherit;
+}
+.form__form-warning {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-family: inherit;
+}
+.form__form-warning sup {
+  color: #d22856;
+}
+.page-footer__footer-logo a {
+  display: block;
+  width: 147px;
+  height: 41px;
+  background: url("../../img/logo-pink-blue-mobile.svg") no-repeat;
+  font-size: 0;
+}
+.page-footer__develop span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  font-family: inherit;
+}
+.gallery__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.gallery__wrapper {
+  color: #283645;
+}
+.gallery__title p {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: inherit;
+}
+.gallery__comment {
+  background-color: #f2f2f2;
+}
+.gallery__comment p {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 24px;
+}
+.gallery__comment-auhor {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.gallery__comment-time-ago {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: inherit;
+}
+.gallery__likes-counter {
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
 }
