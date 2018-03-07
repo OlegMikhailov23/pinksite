@@ -1,0 +1,38 @@
+@body-bg: #ffffff;
+@main-font-color: #283645;
+@contact-font-color: #d22856;
+
+@import "../mixin.less";
+
+.contacts {
+    min-height: 610px;
+    background: url("../../img/bg-map-mobile@1x.png") no-repeat; 
+}
+
+.contacts__wrapper {
+    background-color: @body-bg;
+}
+
+.contacts__header {
+    .font-size( 24px, 26px);
+    color: @main-font-color;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.contacts__action {
+    .font-size( 18px, 20px);
+    font-weight: 700;
+    color: @main-font-color;
+}
+
+.contacts__contact a {
+    .zero-style();
+}
+
+.contacts__contact, .contacts__contact a {
+    .font-size ( 24px, 25px);
+    color: @contact-font-color;
+    font-weight: 300;
+    font-family: inherit;
+}

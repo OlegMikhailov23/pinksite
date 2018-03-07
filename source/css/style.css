@@ -441,12 +441,14 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
+  border-collapse: collapse;
 }
 .main-nav__list-item {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
+  border-collapse: collapse;
   display: block;
   background-color: #283645;
   padding-top: 22px;
@@ -462,7 +464,20 @@ html {
   line-height: 32px;
 }
 .intro__wrapper {
-  background: url("../../img/bg-back-mobile@1x.jpg");
+  background: #1d2631 url("../../img/bg-back-mobile@1x.jpg") no-repeat;
+}
+.intro__header {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 24px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: inherit;
+  text-align: center;
 }
 .intro__wrapper-bottom {
   padding-top: 29px;
@@ -533,6 +548,7 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
+  border-collapse: collapse;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -544,6 +560,7 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
+  border-collapse: collapse;
   font-size: 14px;
   line-height: 24px;
   color: inherit;
@@ -567,6 +584,7 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
+  border-collapse: collapse;
   color: #000000;
   font-size: 18px;
   line-height: 30px;
@@ -577,8 +595,137 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
+  border-collapse: collapse;
   font-size: 14px;
   line-height: 30px;
   font-family: inherit;
   color: inherit;
+}
+.price__wrapper {
+  background-color: #f2f2f2;
+}
+.price__items {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+}
+.price__table-header {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  background-color: #283645;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.price__table-header p {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: inherit;
+}
+.price__table-field {
+  background-color: #ffffff;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.contacts {
+  min-height: 610px;
+  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+}
+.contacts__wrapper {
+  background-color: #ffffff;
+}
+.contacts__header {
+  font-size: 24px;
+  line-height: 26px;
+  color: #283645;
+  font-family: inherit;
+  font-weight: 300;
+}
+.contacts__action {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #283645;
+}
+.contacts__contact a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+}
+.contacts__contact,
+.contacts__contact a {
+  font-size: 24px;
+  line-height: 25px;
+  color: #d22856;
+  font-weight: 300;
+  font-family: inherit;
+}
+.form__title {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
+  font-family: inherit;
+}
+.form__name-fields label,
+.form__contacts label {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.form__proofs p,
+.form__whatapp p {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.form__proofs-item label,
+.form__whatapp label {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: inherit;
+  color: #283645;
 }
