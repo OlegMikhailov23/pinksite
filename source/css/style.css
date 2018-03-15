@@ -841,3 +841,40 @@ html {
   color: #d22856;
   text-transform: uppercase;
 }
+.photo-editor__wrapper {
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.photo-editor__title p {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: inherit;
+}
+.photo-editor__photo {
+  width: 280px;
+  min-height: 374px;
+  background: url("../../img/photo-road-mobile@1x.jpg") no-repeat center;
+}
+.photo-editor__post-btn {
+  min-width: 280px;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  padding-left: 88px;
+  padding-right: 88px;
+  font-size: 18px;
+  line-height: 19px;
+  color: #d22856;
+  background-color: transparent;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+.photo-editor__post-btn-cancel {
+  opacity: 0.1;
+}
