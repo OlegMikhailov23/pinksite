@@ -3,12 +3,19 @@
 @import "../mixin.less";
 
 .page-header {
+    .container();
+    min-height: 390px;
     background-color: @page-header-bg;
     padding-top: 20px;
     position: relative;
 }
 
+.page-header__logo {
+    .clearfix();
+}
+
 .page-header__logo-link {
+    float: left;
     display: block;
     .size(75px, 23px);
     font-size: 0;
