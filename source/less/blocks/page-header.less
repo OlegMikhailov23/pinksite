@@ -4,7 +4,9 @@
 
 .page-header {
     .container();
-    min-height: 390px;
+    .padding-left-right (20px, 20px);
+    margin-bottom: -66px;
+    min-height: 69px;
     background-color: @page-header-bg;
     padding-top: 20px;
     position: relative;
@@ -12,6 +14,7 @@
 
 .page-header__logo {
     .clearfix();
+    float: left;
 }
 
 .page-header__logo-link {
@@ -20,4 +23,21 @@
     .size(75px, 23px);
     font-size: 0;
     background: url("../../img/logo-pink-white-mobile.svg") center no-repeat;
+}
+
+.page-header__open {
+    float: right;
+}
+
+.page-header__btn {
+    font-size: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.page-header__open-btn {
+    .size (50px,
+    25px);
+    background: url("../../img/icon-menu-burger.svg") no-repeat center;
 }

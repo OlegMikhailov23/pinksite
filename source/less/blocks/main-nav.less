@@ -7,6 +7,11 @@
 }
 
 .main-nav {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 1;
 }
 
 .main-nav__list {
@@ -15,7 +20,9 @@
 }
 
 .main-nav__list-item {
-   .zero-style();	
+   .zero-style();
+   .clearfix();
+   .padding-left-right (20px, 20px);
    display: block;
    background-color: #283645;
    padding-top: 22px;
@@ -25,8 +32,23 @@
    border-bottom: 1px solid #000000;
 }
 
-.main-nav__list-item a {
+.main-nav__list-item a:not(.main-nav__logo-link) {
    color: #ffffff;
    text-decoration: none;
    .font-size(18px, 32px);
+}
+
+.main-nav__logo-link {
+    float: left;
+    display: block;
+    .size(75px, 23px);
+    font-size: 0;
+    background: url("../../img/logo-pink-white-mobile.svg") center no-repeat;
+}
+
+.page-header__close-btn {
+    float: right;
+    .size (50px,
+    25px);
+    background: url("../../img/icon-menu-cross.svg") no-repeat center;
 }
