@@ -3,7 +3,8 @@
 @import "../mixin.less";
 
 .advantages__wrapper {
-    .padding-top-bottom(44px);
+    .padding-top-bottom (44px);
+    .container();
 }
 
 
@@ -12,27 +13,44 @@
 .advantages__quote-answer {
     margin: 0;
     padding: 0;
-    .font-size(24px, 26px);
+    .font-size (24px, 26px);
     font-weight: 300;
     text-align: center;
     font-family: inherit;
     color: @main-font-color;
 }
 
-.advantages__question {
-    padding-bottom: 30px;
+.advantages__quote-question {
+    margin-bottom: 30px;
+}
+
+.advantages__quote-answer {
+    margin-bottom: 65px;
+}
+
+.advantages__item:nth-child(n+1) {
+    padding-top: 40px;
 }
 
 .advantages__item-list {
+    position: relative;
+    .padding-left-right();
     background-color: @advantages-bg;
+    padding-top: 55px;
+}
+
+.advantages__item-list:last-child {
+    padding-bottom: 320px;
 }
 
 .advantages__item h3 {
     .zero-style();
     .font-size(18px, 24px);
+    padding-bottom: 20px;
     font-weight: 700;
     font-family: inherit;
     color: @advantages-h3-color;
+    text-align: center;
 }
 
 .advantages__item p {
@@ -40,17 +58,14 @@
     .font-size (14px, 24px);
     color: inherit;
     font-family: inherit;
+    text-align: center;
 }
 
 .advantages__bottom-iphone {
-    .size(157px, 320px);
-    background: url("../../img/iphone-screen-mobile@1x.png")
-}
-
-.advantages__quote-triangle {
-    background: url("../../img/bg-triangle-white.svg") center no-repeat;
-    min-height: 95px;
-    width: 100%;
-    transform: rotate(180deg);
-    opacity: 0.03;
+    position: absolute;
+    top: 560px;
+    left: 78px;
+    .size (157px, 320px);
+    background: url("../../img/iphone-screen-mobile@1x.png");
+    visibility: 1;
 }
