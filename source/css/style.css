@@ -226,10 +226,11 @@ img {
   font-weight: 300;
 }
 .advantages__wrapper {
-  padding-top: 44px;
-  padding-bottom: 10px;
   width: 320px;
   margin: 0 auto;
+  position: relative;
+  padding-top: 44px;
+  z-index: 5;
 }
 @media (min-width: 768px) {
   .advantages__wrapper {
@@ -304,7 +305,25 @@ img {
   width: 157px;
   height: 320px;
   background: url("../../img/iphone-screen-mobile@1x.png");
-  visibility: 1;
+}
+.reviews__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .reviews__wrapper {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__wrapper {
+    width: 1200px;
+  }
 }
 .reviews__auhor-name {
   padding: 0;
@@ -312,10 +331,12 @@ img {
   text-decoration: none;
   list-style: none;
   border-collapse: collapse;
+  margin-bottom: 25px;
   color: #000000;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
 }
 .reviews__item p {
   padding: 0;
@@ -327,6 +348,8 @@ img {
   line-height: 30px;
   font-family: inherit;
   color: inherit;
+  text-align: center;
+  font-weight: 400;
 }
 .price__wrapper {
   background-color: #f2f2f2;

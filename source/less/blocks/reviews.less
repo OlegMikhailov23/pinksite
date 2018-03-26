@@ -2,11 +2,21 @@
 
 @import "../mixin.less";
 
+.reviews__wrapper {
+   .padding-left-right();
+   .container();
+   position: relative;
+   background-color: @body-bg;
+   z-index: 10;
+}
+
 .reviews__auhor-name {
     .zero-style();
+    margin-bottom: 25px;
     color: @advantages-h3-color;
     .font-size(18px, 30px);
     font-weight: 700;
+    text-align: center;
 }
 
 .reviews__item p {
@@ -14,4 +24,8 @@
     .font-size( 14px, 30px);
     font-family: inherit;
     color: inherit;
+    text-align: center;
+    font-weight: 400;
 }
+
+
