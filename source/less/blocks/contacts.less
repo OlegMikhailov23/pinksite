@@ -4,7 +4,8 @@
 
 .contacts {
     min-height: 610px;
-    background: url("../../img/bg-map-mobile@1x.png") no-repeat; 
+    background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+    .container();
 }
 
 .contacts__wrapper {
@@ -12,25 +13,45 @@
 }
 
 .contacts__header {
+    .zero-style();
     .font-size( 24px, 26px);
+    margin-bottom: 42px;
+    padding-top: 47px;
     color: @main-font-color;
     font-family: inherit;
     font-weight: 300;
+    text-align: center;
 }
 
 .contacts__action {
+    .zero-style();
+    padding-bottom: 10px;
     .font-size( 18px, 20px);
     font-weight: 700;
     color: @main-font-color;
+    text-align: center;
+}
+
+.contacts__item:nth-child(odd) {
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.contacts__item:last-child {
+    padding-bottom: 43px;
 }
 
 .contacts__contact a {
     .zero-style();
+    display: block;
+    margin: auto;
 }
 
 .contacts__contact, .contacts__contact a {
+    .zero-style();
     .font-size ( 24px, 25px);
     color: @contact-font-color;
     font-weight: 300;
     font-family: inherit;
+    text-align: center;
 }

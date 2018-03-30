@@ -353,6 +353,18 @@ img {
 }
 .price__wrapper {
   background-color: #f2f2f2;
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .price__wrapper {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__wrapper {
+    width: 1200px;
+  }
 }
 .price__items {
   padding: 0;
@@ -360,6 +372,7 @@ img {
   text-decoration: none;
   list-style: none;
   border-collapse: collapse;
+  margin-left: -265px;
 }
 .price__table-header {
   padding: 0;
@@ -367,9 +380,15 @@ img {
   text-decoration: none;
   list-style: none;
   border-collapse: collapse;
+  padding-left: 88px;
+  padding-right: 88px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
   background-color: #283645;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 30px;
   font-weight: 700;
   font-family: inherit;
@@ -387,32 +406,70 @@ img {
   font-family: inherit;
 }
 .price__table-field {
+  padding-left: 17px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   background-color: #ffffff;
   color: #283645;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   font-family: inherit;
+  border: 2px solid #cccccc;
 }
 .contacts {
   min-height: 610px;
   background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contacts {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    width: 1200px;
+  }
 }
 .contacts__wrapper {
   background-color: #ffffff;
 }
 .contacts__header {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 42px;
+  padding-top: 47px;
   color: #283645;
   font-family: inherit;
   font-weight: 300;
+  text-align: center;
 }
 .contacts__action {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  padding-bottom: 10px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #283645;
+  text-align: center;
+}
+.contacts__item:nth-child(odd) {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+.contacts__item:last-child {
+  padding-bottom: 43px;
 }
 .contacts__contact a {
   padding: 0;
@@ -420,14 +477,22 @@ img {
   text-decoration: none;
   list-style: none;
   border-collapse: collapse;
+  display: block;
+  margin: auto;
 }
 .contacts__contact,
 .contacts__contact a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
   font-size: 24px;
   line-height: 25px;
   color: #d22856;
   font-weight: 300;
   font-family: inherit;
+  text-align: center;
 }
 .form__title {
   padding: 0;

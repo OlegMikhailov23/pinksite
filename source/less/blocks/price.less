@@ -5,17 +5,23 @@
 
 .price__wrapper {
     background-color: @advantages-bg;
+    .container();
 }
 
 .price__items {
     .zero-style();
+    margin-left: -265px;
 }
 
 .price__table-header {
     .zero-style();
+    .padding-left-right (88px, 88px);
+    .padding-top-bottom (25px, 25px);
+    border-left: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
     background-color: @main-nav-bg;
     color: @font-color-white;
-    .font-size (18px, 30px);
+    .font-size (22px, 30px);
     font-weight: 700;
     font-family: inherit;
 }
@@ -29,11 +35,14 @@
 }
 
 .price__table-field {
+    padding-left: 17px;
+    .padding-top-bottom (23px, 23px);
     background-color: #ffffff;
     color: @main-font-color;
     .font-size (14px, 30px);
     text-transform: uppercase;
     font-family: inherit;
+    border: 2px solid #cccccc;
 }
 
 
