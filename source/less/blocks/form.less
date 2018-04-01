@@ -9,6 +9,7 @@
 
 .form__wrapper {
     .container();
+    .padding-top-bottom (50px,0);
     background: @body-bg;
 }
 
@@ -16,26 +17,37 @@
 .form__title {
     .zero-style();
     .font-size (14px, 30px);
+    padding-bottom: 50px;
     color: @main-font-color;
     font-weight: 400;
     font-family: inherit;
+    text-align: center;
 }
 
-.form__name-fields, .form__proofs, .form__contacts, .form__whatapp, .form__textfield {
+.form__name-fields, .form__proofs, .form__contacts, .form__whatapp, .form__textfield, .form__title {
   .padding-left-right();
 }
 
 .form__name-fields label, .form__contacts label, .form__textfield p {
-    .zero-style();
     .font-size (14px, 30px);
     color: @contact-font-color;
     text-transform: uppercase;
     font-family: inherit;
 }
 
+.form__name-field {
+    .input-field ();
+}
+
+.form__name-field:nth-of-type(1) {
+    margin-bottom: 22px;
+}
+
 .form__proofs {
     .zero-style();
     .padding-left-right();
+    padding-top: 38px;
+    margin-top: 42px;
     background-color: @advantages-bg;
     & ul {
        .zero-style();
@@ -52,10 +64,14 @@
     color: @contact-font-color;
     text-transform: uppercase;
     font-family: inherit;
+    text-align: center;
+}
+
+.form__proofs  p {
+    margin-bottom: 53px;
 }
 
 .form__name-field, .form__proofs-item label, .form__whatapp label, .form__tel-field, .form__email-field, .form__textfield textarea {
-    .zero-style();
     .font-size (18px, 30px);
     font-family: inherit;
     color: @main-font-color;
@@ -83,3 +99,120 @@
       color: @contact-font-color;
   }
 }
+
+.form__wrapper input::-webkit-input-placeholder, .form__wrapper textarea::-webkit-input-placeholder  { 
+   color: @main-font-color; 
+}
+
+.form__wrapper input:-moz-placeholder, .form__wrapper textarea:-moz-placeholder  { 
+   color: @main-font-color; 
+}
+
+.form__wrapper label {
+    padding-left: 22px;
+}
+
+.form__proofs-item:not(:last-child) {
+    padding-bottom: 65px;
+}
+
+.form__proofs-item {
+    padding-bottom: 60px;
+}
+
+.form__proofs input[type="checkbox"] {
+    display: none;
+}
+
+.form__proofs input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 70px;
+}
+
+.form__proofs input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+}
+
+.form__proofs input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 17px;
+    background: url("../../img/icon-yes.svg") no-repeat;
+    top: 10px;
+    left: 7px;
+}
+
+.form__contacts {
+   .padding-top-bottom (37px, 55px);
+}
+
+.form__contacts input {
+   .input-field ();
+}
+
+.form__tel-field {
+    margin-bottom: 22px;
+}
+
+.form__whatapp {
+    .padding-top-bottom (37px, 55px);
+}
+
+.form__whatapp p {
+    padding-bottom: 50px;
+}
+
+.form__whatapp input[type="radio"] {
+    display: none;
+}
+
+
+.form__whatapp input[type="radio"] + label:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.form__whatapp input[type="radio"] + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 70px;
+}
+
+.form__whatapp input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.form__whatapp input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: @yes-color;
+    top: 10px;
+    left: 10px;
+}
+
