@@ -565,7 +565,7 @@ img {
   width: 100%;
   padding-left: 20px;
   height: 60px;
-  border: 2px solid #fafafa;
+  border: 2px solid #cccccc;
   outline: none;
 }
 .form__name-field:nth-of-type(1) {
@@ -701,7 +701,7 @@ img {
   width: 100%;
   padding-left: 20px;
   height: 60px;
-  border: 2px solid #fafafa;
+  border: 2px solid #cccccc;
   outline: none;
 }
 .form__tel-field {
@@ -749,6 +749,49 @@ img {
   top: 10px;
   left: 10px;
 }
+.form__textfield {
+  padding-top: 60px;
+  margin-bottom: 47px;
+}
+.form__textfield p {
+  text-align: center;
+}
+.form__textfield textarea {
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: inherit;
+  border: 2px solid #cccccc;
+}
+.form__btn {
+  display: block;
+  margin: 0 auto;
+}
+.form__form-warning {
+  margin-top: 42px;
+  text-align: center;
+}
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 66px;
+}
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 1200px;
+  }
+}
+.page-footer__footer-logo {
+  width: 152px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
 .page-footer__footer-logo a {
   display: block;
   width: 147px;
@@ -762,20 +805,79 @@ img {
   color: #283645;
   font-family: inherit;
 }
+.page-footer__social-links {
+  text-align: center;
+  font-size: 0;
+}
+.page-footer__social-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #cccccc;
+  border-radius: 50%;
+  font-size: 0;
+}
+.page-footer__social-link:not(:last-of-type) {
+  margin-right: 12px;
+}
+.page-footer__develop {
+  text-align: center;
+  padding-top: 45px;
+}
 .gallery__item {
   padding-left: 20px;
   padding-right: 20px;
 }
 .gallery__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -225px;
+  background: #ffffff;
   color: #283645;
 }
+@media (min-width: 768px) {
+  .gallery__wrapper {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__wrapper {
+    width: 1200px;
+  }
+}
+.gallery__title {
+  padding-top: 52px;
+  padding-bottom: 56px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+}
 .gallery__title p {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
   font-size: 14px;
   line-height: 30px;
   font-family: inherit;
 }
+.gallery__photo {
+  width: 280px;
+  height: 180px;
+}
+.gallery__photo--panorama {
+  height: 137px;
+  min-width: 320px;
+  margin-left: -20px;
+}
 .gallery__comment {
   background-color: #f2f2f2;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 .gallery__comment p {
   padding: 0;
@@ -804,10 +906,29 @@ img {
   color: #d22856;
   text-transform: uppercase;
 }
+.gallery__likes {
+  padding-top: 22px;
+}
 .photo-editor__wrapper {
+  width: 320px;
+  margin: 0 auto;
   background-color: #f2f2f2;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .photo-editor__wrapper {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-editor__wrapper {
+    width: 1200px;
+  }
+}
+.photo-editor__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: #ffffff;
 }
 .photo-editor__title p {
   padding: 0;
@@ -821,6 +942,8 @@ img {
   font-family: inherit;
 }
 .photo-editor__photo {
+  margin: 0 auto;
+  margin-top: 20px;
   width: 280px;
   min-height: 374px;
   background: url("../../img/photo-road-mobile@1x.jpg") no-repeat center;

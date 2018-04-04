@@ -2,15 +2,49 @@
 
 @import "../mixin.less";
 
-.page-footer__footer-logo a {
+.page-footer__wrapper {
+    .container();
+    margin-top: 66px;
+}
+
+.page-footer__footer-logo {
+   width: 152px;
+   margin: 0 auto;
+   margin-bottom: 40px;
+   & a {
     display: block;
     .size (147px, 41px);
     background: url("../../img/logo-pink-blue-mobile.svg") no-repeat;
     font-size: 0;
+}
 }
 
 .page-footer__develop span {
     .font-size (14px, 18px);
     color: @main-font-color;
     font-family: inherit;
+}
+
+.page-footer__social-links {
+    text-align: center;
+    font-size: 0;
+}
+
+.page-footer__social-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    border: 3px solid @border-color;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.page-footer__social-link:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.page-footer__develop {
+    text-align: center;
+    padding-top: 45px;
 }

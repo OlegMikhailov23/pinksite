@@ -2,8 +2,14 @@
 @import "../mixin.less";
 
 .photo-editor__wrapper {
+    .container();
     background-color: @advantages-bg;
-    .padding-left-right (20px, 20px);
+}
+
+.photo-editor__title {
+    .padding-top-bottom (50px, 50px);
+    text-align: center;
+    background: @body-bg;
 }
 
 .photo-editor__title p {
@@ -14,6 +20,8 @@
 }
 
 .photo-editor__photo {
+    margin: 0 auto;
+    margin-top: 20px;
     width: 280px;
     min-height: 374px;
     background: url("../../img/photo-road-mobile@1x.jpg") no-repeat center;

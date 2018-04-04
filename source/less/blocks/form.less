@@ -137,7 +137,7 @@
     display: block;
     width: 35px;
     height: 35px;
-    border: 2px solid #cccccc;
+    border: 2px solid @border-color;
     background-color: #ffffff;
     border-radius: 2px;
     top: 0;
@@ -197,7 +197,7 @@
     display: block;
     width: 35px;
     height: 35px;
-    border: 2px solid #cccccc;
+    border: 2px solid @border-color;
     background-color: #ffffff;
     border-radius: 50%;
     top: 0;
@@ -216,3 +216,27 @@
     left: 10px;
 }
 
+.form__textfield {
+    padding-top: 60px;
+    margin-bottom: 47px;
+  & p {
+      text-align: center;
+  }
+  & textarea {
+      width: 100%;
+      padding-top: 22px;
+      .padding-left-right (20px, 20px);
+      outline: inherit;
+      border: 2px solid @border-color;
+  }
+}
+
+.form__btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.form__form-warning {
+    margin-top: 42px;
+    text-align: center;
+}
