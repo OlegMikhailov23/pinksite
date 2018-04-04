@@ -912,6 +912,7 @@ img {
 .photo-editor__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 40px;
   background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
@@ -923,6 +924,11 @@ img {
   .photo-editor__wrapper {
     width: 1200px;
   }
+}
+.photo-editor__range-controls {
+  margin-bottom: 37px;
+  position: relative;
+  border-bottom: 1px solid #cccccc;
 }
 .photo-editor__title {
   padding-top: 50px;
@@ -949,6 +955,8 @@ img {
   background: url("../../img/photo-road-mobile@1x.jpg") no-repeat center;
 }
 .photo-editor__post-btn {
+  display: block;
+  margin: 0 auto;
   min-width: 280px;
   padding-top: 16px;
   padding-bottom: 18px;
@@ -960,7 +968,48 @@ img {
   background-color: transparent;
   border: 3px solid #d22856;
   border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+}
+.photo-editor__post-btn-cancel {
+  margin-top: 12px;
 }
 .photo-editor__post-btn-cancel {
   opacity: 0.1;
+}
+.photo-editor__tools {
+  text-align: center;
+  font-size: 0;
+}
+.photo-editor__tool-btn {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #cccccc;
+}
+.photo-editor__tool-btn:not(:last-of-type) {
+  margin-right: 34px;
+}
+.photo-editor__range-controls-scale {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 34px;
+  height: 2px;
+  width: 240px;
+  background-color: #283645;
+}
+.photo-editor__range-controls-range {
+  position: absolute;
+  left: 180px;
+  top: -6px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #f2f2f2;
+  cursor: pointer;
 }
