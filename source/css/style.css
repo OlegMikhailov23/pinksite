@@ -31,7 +31,7 @@ img {
   padding-top: 20px;
   position: relative;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .page-header {
     width: 700px;
   }
@@ -71,11 +71,26 @@ img {
   height: 25px;
   background: url("../../img/icon-menu-burger.svg") no-repeat center;
 }
+@media (min-width: 700px) {
+  .page-header {
+    min-height: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: -110px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .page-header__logo-link {
+    width: 147px;
+    height: 40px;
+    background: url("../../img/logotype-white-tablet.png") center no-repeat;
+  }
+}
 .main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .main-nav__wrapper {
     width: 700px;
   }
@@ -101,7 +116,7 @@ img {
   list-style: none;
   border-collapse: collapse;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .main-nav__list {
     width: 700px;
   }
@@ -161,7 +176,7 @@ img {
   padding-right: 45px;
   background: #1d2631 url("../../img/bg-back-mobile@1x.jpg") no-repeat;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .intro__wrapper {
     width: 700px;
   }
@@ -184,6 +199,27 @@ img {
   font-family: inherit;
   text-align: center;
 }
+@media (min-width: 700px) {
+  .intro__wrapper {
+    min-height: 727px;
+    background: #1d2631 url("../../img/back-tablet@1x.jpg") no-repeat;
+  }
+}
+.download-app {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .download-app {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .download-app {
+    width: 1200px;
+  }
+}
 .download-app__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -192,7 +228,7 @@ img {
   background-color: #1d2631;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .download-app__wrapper {
     width: 700px;
   }
@@ -201,6 +237,9 @@ img {
   .download-app__wrapper {
     width: 1200px;
   }
+}
+.download-app__title {
+  display: none;
 }
 .download-app__btn {
   display: block;
@@ -215,8 +254,9 @@ img {
   color: #ffffff;
   background-color: transparent;
   border: 3px solid #ffffff;
-  border-radius: 4px;
+  border-radius: 30px;
   font-family: inherit;
+  cursor: pointer;
 }
 .download-app__logo {
   display: inline-block;
@@ -239,6 +279,34 @@ img {
   line-height: 24px;
   font-weight: 300;
 }
+@media (min-width: 700px) {
+  .download-app__wrapper {
+    position: absolute;
+    left: 40px;
+    top: -545px;
+    width: 300px;
+    background-color: transparent;
+  }
+  .download-app__title {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    border-collapse: collapse;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 37px;
+    width: 190px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 300;
+  }
+  .download-app__btn {
+    margin-bottom: 42px;
+  }
+}
 .advantages__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -246,7 +314,7 @@ img {
   padding-top: 44px;
   z-index: 5;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .advantages__wrapper {
     width: 700px;
   }
@@ -320,6 +388,51 @@ img {
   height: 320px;
   background: url("../../img/iphone-screen-mobile@1x.png");
 }
+@media (min-width: 700px) {
+  .advantages__wrapper {
+    padding-top: 55px;
+  }
+  .advantages__quote-question,
+  .advantages__quote-answer {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .advantages__quote-question {
+    margin-bottom: 10px;
+  }
+  .advantages__quote-answer {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 100px;
+  }
+  .advantages__item-list {
+    padding-top: 25px;
+    padding-left: 350px;
+    padding-right: 40px;
+  }
+  .advantages__item h3,
+  .advantages__item p {
+    text-align: left;
+  }
+  .advantages__item:nth-child(1) {
+    padding-top: 0px;
+  }
+  .advantages__item-list:last-child {
+    padding-bottom: 45px;
+  }
+  .advantages__bottom-iphone {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 268px;
+    height: 558px;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: cover;
+  }
+}
+.slider__input {
+  display: none;
+}
 .reviews__wrapper {
   padding-left: 20px;
   padding-right: 20px;
@@ -329,7 +442,7 @@ img {
   background-color: #ffffff;
   z-index: 10;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .reviews__wrapper {
     width: 700px;
   }
@@ -338,6 +451,41 @@ img {
   .reviews__wrapper {
     width: 1200px;
   }
+}
+.reviews__promo-text,
+.reviews__auhor-detail {
+  display: none;
+}
+.reviews__promo-text-title {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #000000;
+}
+.reviews__promo-text-article {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: inherit;
+  color: #283645;
+}
+.reviews__promo-text-link {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: inherit;
+  color: #d22856;
 }
 .reviews__auhor-name {
   padding: 0;
@@ -365,12 +513,52 @@ img {
   text-align: center;
   font-weight: 400;
 }
+@media (min-width: 700px) {
+  .reviews__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 125px;
+  }
+  .reviews__promo-text {
+    display: block;
+    padding-left: 310px;
+    padding-top: 100px;
+  }
+  .reviews__promo-text-title {
+    padding-bottom: 18px;
+  }
+  .reviews__promo-text-article {
+    padding-bottom: 18px;
+  }
+  .reviews__items {
+    margin-top: 300px;
+  }
+  .reviews__auhor-name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0px;
+  }
+  .reviews__item p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -170px;
+  }
+  .reviews__auhor-detail {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 400;
+    text-align: center;
+  }
+}
 .price__wrapper {
   background-color: #f2f2f2;
   width: 320px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .price__wrapper {
     width: 700px;
   }
@@ -437,7 +625,7 @@ img {
   width: 320px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .contacts {
     width: 700px;
   }
@@ -519,7 +707,7 @@ img {
   padding-bottom: 0;
   background: #ffffff;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .form__wrapper {
     width: 700px;
   }
@@ -777,7 +965,7 @@ img {
   margin: 0 auto;
   margin-top: 66px;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .page-footer__wrapper {
     width: 700px;
   }
@@ -836,7 +1024,7 @@ img {
   background: #ffffff;
   color: #283645;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .gallery__wrapper {
     width: 700px;
   }
@@ -915,7 +1103,7 @@ img {
   padding-bottom: 40px;
   background-color: #f2f2f2;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .photo-editor__wrapper {
     width: 700px;
   }

@@ -12,9 +12,17 @@
 
 .intro__header {
     .zero-style;
-    .font-size (24px, 26px);
+    .font-size (24px,
+    26px);
     color: @font-color-white;
     font-weight: 300;
     font-family: inherit;
     text-align: center;
+}
+
+@media @tablet-widths {
+    .intro__wrapper {
+        min-height: 727px;
+        background: #1d2631 url("../../img/back-tablet@1x.jpg") no-repeat;
+    }
 }
