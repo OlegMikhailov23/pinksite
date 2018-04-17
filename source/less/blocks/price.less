@@ -6,11 +6,12 @@
 .price__wrapper {
     background-color: @advantages-bg;
     .container();
+    padding-top: 65px;
 }
 
 .price__items {
     .zero-style();
-    margin-left: -265px;
+    margin-left: -435px;
 }
 
 .price__table-header {
@@ -43,6 +44,43 @@
     text-transform: uppercase;
     font-family: inherit;
     border: 2px solid @border-color;
+}
+
+.price__table-field-hidden-th {
+    background-color: transparent;
+    border-left: none;
+}
+
+@media @tablet-widths {
+  .price__wrapper {
+      padding-top: 35px;
+      padding-bottom: 68px;
+  }
+  
+  .price__items {
+      margin: 0 auto;
+  }
+  
+  .price__table-header {
+    .padding-left-right (35px, 35px);
+    .padding-top-bottom (20px, 15px);
+    .font-size (16px, 30px);
+  }
+  
+  .price__table-header p {
+      .font-size (18px, 30px);
+  }
+  
+  .price__table-field {
+      font-size: 0;
+      .padding-top-bottom (15px, 17px);
+  }
+  
+  .price__table-field-hidden {
+    .font-size (14px, 30px);
+    .padding-left-right (15px, 25px);
+    .padding-top-bottom (15px, 17px);
+  }
 }
 
 

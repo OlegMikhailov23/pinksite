@@ -111,6 +111,8 @@
                 <input class="slider__input" type="radio" name="price" id="price-input-3">
                 <table class="price__items">
                     <tr>
+                        <th class="price__table-header price__table-field-hidden-th">
+                        </th>
                         <th class="price__table-header">Стандарт
                             <p>3,99 USD</p>
                         </th>
@@ -122,16 +124,19 @@
                         </th>
                     </tr>
                     <tr>
+                        <td class="price__table-field  price__table-field-hidden">Розовый фильтр</td>
                         <td class="price__table-field">Розовый фильтр</td>
                         <td class="price__table-field">Розовый фильтр</td>
                         <td class="price__table-field">Розовый фильтр</td>
                     </tr>
                     <tr>
+                        <td class="price__table-field  price__table-field-hidden">Смайлики</td>
                         <td class="price__table-field">Смайлики</td>
                         <td class="price__table-field">Смайлики</td>
                         <td class="price__table-field">Смайлики</td>
                     </tr>
                     <tr>
+                        <td class="price__table-field  price__table-field-hidden">Комментарии</td>
                         <td class="price__table-field">Комментарии</td>
                         <td class="price__table-field">Комментарии</td>
                         <td class="price__table-field">Комментарии</td>
@@ -147,23 +152,39 @@
         <section class="contacts">
             <div class="contacts__wrapper">
                 <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
-                <div class="contacts__item">
+                <div class="contacts__items">
+                <div class="contacts__items-item">
                     <p class="contacts__action">Звоните:</p>
                     <span class="contacts__contact"><a href="tel:+7(812)5556666">+7 (812) 555-66-66</a></span>
                 </div>
-                <div class="contacts__item">
+                <div class="contacts__items-item">
                     <p class="contacts__action">Пишите:</p>
                     <span class="contacts__contact"><a href="mailto:dkfolkin@gmail.com">dkfolkin@gmail.com</a></span>
                 </div>
-                <div class="contacts__item">
+                <div class="contacts__items-item">
                     <p class="contacts__action">Приезжайте в гости:</p>
                     <p class="contacts__contact">ул. Большая Конюшенная, 19/8</p>
+                </div>
                 </div>
             </div>
             <div class="contacts__bottom-triangle"></div>
         </section>
     </main>
-    <footer>
+    <footer class="page-footer  page-footer-hidden">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__footer-logo">
+                <a href="#">Pink</a>
+            </div>
+            <div class="page-footer__social-links">
+                <a class="page-footer__social-link page-footer__link-tv" href="#">Twitter</a>
+                <a class="page-footer__social-link page-footer__link-fc" href="#">Facebook</a>
+                <a class="page-footer__social-link page-footer__link-You" href="#">Youtube</a>
+            </div>
+            <div class="page-footer__develop">
+                <span>Разработано</span>
+                <a href="#">Html Academy</a>
+            </div>
+        </div>
     </footer>
 </body>
 

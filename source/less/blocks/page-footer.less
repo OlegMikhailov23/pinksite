@@ -5,6 +5,11 @@
 .page-footer__wrapper {
     .container();
     margin-top: 66px;
+    .clearfix();
+}
+
+.page-footer-hidden {
+    display: none;
 }
 
 .page-footer__footer-logo {
@@ -47,4 +52,30 @@
 .page-footer__develop {
     text-align: center;
     padding-top: 45px;
+}
+
+@media @tablet-widths {
+    .page-footer-hidden {
+    display: block;
+  }
+  
+  .page-footer__wrapper {
+    margin-top: 0;
+    .padding-left-right (40px, 40px);
+    .padding-top-bottom (35px, 35px);
+  }
+  
+  .page-footer__footer-logo {
+      float: left;
+      margin: auto;
+      margin-right: 70px;
+  }
+  
+  .page-footer__social-links {
+      float: left;
+  }
+  
+  .page-footer__develop {
+      float: right;
+  }
 }
