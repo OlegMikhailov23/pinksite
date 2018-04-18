@@ -116,3 +116,44 @@
     background-size: cover;
 }
 }
+
+@media @desktop-widths {
+  .advantages__quote {
+      .padding-left-right (230px, 230px);
+  }
+  
+  .advantages__item-list {
+      .padding-left-right (130px, 130px);
+      padding-top: 0;
+      text-align: center;
+  }
+  
+  .advantages__item {
+      display: inline-block;
+      vertical-align: top;
+      width: 229px;
+  }
+  
+  .advantages__item:nth-child(even) {
+      margin-right: 85px;
+      margin-left: 85px;
+  }
+  
+  .advantages__item:nth-child(n+1) {
+      padding-top: 260px;
+  }
+  
+  .advantages__bottom-iphone {
+      display: none;
+  }
+  
+  .advantages__item h3 {
+      .font-size(30px, 32px);
+      text-align: center;
+  }
+  
+  .advantages__item p {
+      .font-size(18px, 30px);
+      text-align: center;
+  }
+}

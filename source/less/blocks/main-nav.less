@@ -9,7 +9,7 @@
 .main-nav {
     display: none;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     opacity: 1;
 }
@@ -21,7 +21,6 @@
 
 .main-nav__list-item {
     .zero-style();
-    .clearfix();
     .padding-left-right (20px, 20px);
     display: block;
     background-color: #283645;
@@ -51,4 +50,36 @@
     .size (50px,
     25px);
     background: url("../../img/icon-menu-cross.svg") no-repeat center;
+}
+
+@media @desktop-widths {
+    .main-nav {
+    display: block;
+    width: 625px;
+    float: left;
+    position: relative;
+  }
+  .main-nav__list {
+      font-size: 0;
+      padding-top: 15px;
+      margin-left: 168px;
+  }
+  
+  .main-nav__list-item {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+  }
+  
+  .main-nav__list-item:not(:last-of-type) {
+      margin-right: 80px;
+  }
+  
+  .main-nav__list-item--hidden {
+      display: none;
+  }
+  
+  
 }
