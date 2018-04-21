@@ -627,6 +627,18 @@ img {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .reviews__promo-text {
+    background-color: #f2f2f2;
+    padding-left: 490px;
+    padding-right: 175px;
+    padding-bottom: 115px;
+  }
+  .reviews__wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .price__wrapper {
   background-color: #f2f2f2;
   width: 320px;
@@ -730,6 +742,26 @@ img {
     padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 17px;
+  }
+}
+@media (min-width: 1200px) {
+  .price__table-header {
+    padding-left: 65px;
+    padding-right: 65px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .price__table-header p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .price__table-field-hidden {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+    padding-right: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 .contacts {
@@ -844,6 +876,18 @@ img {
   .contacts {
     background-size: cover;
     min-height: 720px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__items-item:nth-child(3) {
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+  .contacts__header {
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 50px;
+    line-height: 52px;
   }
 }
 .form {
@@ -1192,6 +1236,15 @@ img {
   }
   .page-footer__develop {
     float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .page-footer__footer-logo {
+    margin-right: 230px;
   }
 }
 .gallery__item {
