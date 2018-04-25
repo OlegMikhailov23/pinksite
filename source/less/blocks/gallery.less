@@ -34,6 +34,7 @@
     height: 137px;
     min-width: 320px;
     margin-left: -20px;
+    background: url("../../img/panorama-mobile@1x.jpg") no-repeat center;
 }
 
 .gallery__comment {
@@ -66,6 +67,67 @@
 
 .gallery__likes {
     padding-top: 22px;
+}
+
+@media @tablet-widths {
+  .gallery__wrapper {
+      .padding-left-right (40px, 40px);
+      margin-top: -295px;
+      font-size: 0;
+  }
+  
+  .gallery__item {
+    .padding-left-right (0px, 0px);
+}
+  
+  .gallery__title {
+      .padding-left-right (90px, 90px);
+  }
+  
+  .gallery__title p {
+           .font-size (18px, 30px);
+  }
+  
+  .gallery__photo img{
+      min-width:  300px;
+  }
+  
+  .gallery__photo--panorama {
+    margin-left: -40px;
+    height: 510px;
+    min-width: 700px;
+    background-size: cover;
+  }
+  
+  .gallery__comment {
+      position: relative;
+  }
+  
+  .gallery__likes-panorama {
+      position: absolute;
+      top: 0;
+      right: 30px;
+  }
+  
+  .gallery__item-panorama {
+      margin-bottom: 50px;
+  }
+  
+  .gallery__item:not(:nth-child(2)) {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .gallery__item:not(:nth-child(2)) .gallery__comment {
+      height: 155px;
+      min-width: 300px;
+  }
+  
+  .gallery__item-panorama ~ .gallery__item:nth-child(odd) {
+      margin-right: 20px;
+  }
 }
 
 

@@ -21,7 +21,7 @@
         <nav class="main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
-                    <li class="main-nav__list-item">
+                    <li class="main-nav__list-item main-nav__list-item--hidden">
                         <a href="#" class="main-nav__logo-link">Pink</a>
                         <button class="page-header__close-btn  page-header__btn">Закрыть меню</button>
                     </li>
@@ -44,15 +44,14 @@
                 <div class="gallery__title">
                     <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
                 </div>
-                <div class="gallery__item">
+                <div class="gallery__item  gallery__item-panorama">
                     <div class="gallery__photo gallery__photo--panorama">
-                        <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="photo-panorama">
                     </div>
                     <div class="gallery__comment">
                         <span class="gallery__comment-auhor">Анна</span>
                         <span class="gallery__comment-time-ago">(5 минут назад)</span>
                         <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-                        <div class="gallery__likes">
+                        <div class="gallery__likes  gallery__likes-panorama">
                             <button class="gallery__heart-btn" type="button">LIKE</button>
                             <span class="gallery__likes-counter">Нравится: 356</span>
                         </div>
@@ -135,7 +134,7 @@
                     <div class="gallery__comment">
                         <span class="gallery__comment-auhor">Наде</span>
                         <span class="gallery__comment-time-ago">(5 минут назад)</span>
-                        <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+                        <p>Всем GM и взаимные лайки!</p>
                         <div class="gallery__likes">
                             <button class="gallery__heart-btn" type="button">LIKE</button>
                             <span class="gallery__likes-counter">Нравится: 356</span>
@@ -145,11 +144,13 @@
             </div>
         </section>
         <section class="photo-editor">
-             <div class="photo-editor__wrapper">
-            <div class="photo-editor__title">
-                <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
-            </div>
+            <div class="photo-editor__wrapper">
+                <div class="photo-editor__title">
+                    <p>Затмите их всех!
+                        <br> Выкладывайте все, что накопилось в телефоне!</p>
+                </div>
                 <div class="photo-editor__photo"></div>
+                <div class="photo-editor__tools-container">
                 <div class="photo-editor__tools">
                     <button class="photo-editor__tool-btn  photo-editor__tool-btn-cut" type="button"></button>
                     <button class="photo-editor__tool-btn  photo-editor__tool-btn-bucket" type="button"></button>
@@ -163,6 +164,7 @@
                 </div>
                 <button class="photo-editor__post-btn photo-editor__post-btn-send">Запостить</button>
                 <button class="photo-editor__post-btn photo-editor__post-btn-cancel">Отмена</button>
+                </div>
             </div>
         </section>
     </main>

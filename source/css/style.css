@@ -241,6 +241,13 @@ img {
     min-height: 727px;
     background: #1d2631 url("../../img/back-tablet@1x.jpg") no-repeat;
   }
+  .intro__header {
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 50px;
+    line-height: 52px;
+    margin-top: 80px;
+  }
 }
 .download-app {
   position: relative;
@@ -1293,6 +1300,7 @@ img {
   height: 137px;
   min-width: 320px;
   margin-left: -20px;
+  background: url("../../img/panorama-mobile@1x.jpg") no-repeat center;
 }
 .gallery__comment {
   background-color: #f2f2f2;
@@ -1330,6 +1338,59 @@ img {
 }
 .gallery__likes {
   padding-top: 22px;
+}
+@media (min-width: 700px) {
+  .gallery__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -295px;
+    font-size: 0;
+  }
+  .gallery__item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .gallery__title {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .gallery__title p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .gallery__photo img {
+    min-width: 300px;
+  }
+  .gallery__photo--panorama {
+    margin-left: -40px;
+    height: 510px;
+    min-width: 700px;
+    background-size: cover;
+  }
+  .gallery__comment {
+    position: relative;
+  }
+  .gallery__likes-panorama {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
+  .gallery__item-panorama {
+    margin-bottom: 50px;
+  }
+  .gallery__item:not(:nth-child(2)) {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .gallery__item:not(:nth-child(2)) .gallery__comment {
+    height: 155px;
+    min-width: 300px;
+  }
+  .gallery__item-panorama ~ .gallery__item:nth-child(odd) {
+    margin-right: 20px;
+  }
 }
 .photo-editor__wrapper {
   width: 320px;
@@ -1434,4 +1495,18 @@ img {
   border-radius: 50%;
   background: #f2f2f2;
   cursor: pointer;
+}
+@media (min-width: 700px) {
+  .photo-editor__photo {
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  .photo-editor__photo,
+  .photo-editor__tools-container {
+    display: inline-block;
+  }
+  .photo-editor__photo {
+    width: 300px;
+    background-size: 100%;
+  }
 }
