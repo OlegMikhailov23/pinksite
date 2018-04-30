@@ -242,8 +242,8 @@ img {
     background: #1d2631 url("../../img/back-tablet@1x.jpg") no-repeat;
   }
   .intro__header {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 50px;
     line-height: 52px;
     margin-top: 80px;
@@ -902,6 +902,7 @@ img {
   margin-top: -230px;
 }
 .form__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding-top: 50px;
@@ -932,6 +933,9 @@ img {
   font-family: inherit;
   text-align: center;
 }
+.form__title--hidden {
+  display: none;
+}
 .form__name-fields,
 .form__proofs,
 .form__contacts,
@@ -946,6 +950,7 @@ img {
 .form__textfield p {
   font-size: 14px;
   line-height: 30px;
+  position: relative;
   color: #d22856;
   text-transform: uppercase;
   font-family: inherit;
@@ -1160,6 +1165,61 @@ img {
 .form__form-warning {
   margin-top: 42px;
   text-align: center;
+}
+@media (min-width: 700px) {
+  .form__title {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0;
+  }
+  .form__title--hidden {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .form__name-fields,
+  .form__proofs,
+  .form__contacts,
+  .form__whatapp,
+  .form__textfield,
+  .form__title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .form__name-fields {
+    margin-bottom: 430px;
+  }
+  .form__name-fields label {
+    display: block;
+  }
+  .form__name-field {
+    width: 83%;
+    margin-left: 20px;
+  }
+  .form__name-fields label:nth-child(2) .form__name-field {
+    width: 90%;
+  }
+  .form__whatapp {
+    position: absolute;
+    top: 460px;
+    left: 40px;
+    width: 88%;
+    background-color: transparent;
+    border: 2px solid #cccccc;
+  }
+  .form__whatapp p {
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: -45px;
+    width: 65%;
+  }
+  .form__proofs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
 }
 .page-footer__wrapper {
   width: 320px;
