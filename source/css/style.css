@@ -909,6 +909,11 @@ img {
   padding-bottom: 0;
   background: #ffffff;
 }
+.form__wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media (min-width: 700px) {
   .form__wrapper {
     width: 700px;
@@ -1053,6 +1058,10 @@ img {
 .form__proofs-item:not(:last-child) {
   padding-bottom: 65px;
 }
+.form__proofs .form__proofs-title {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .form__proofs-item {
   padding-bottom: 60px;
 }
@@ -1097,6 +1106,9 @@ img {
   height: 60px;
   border: 2px solid #cccccc;
   outline: none;
+}
+.form__contacts-title--hidden {
+  display: none;
 }
 .form__tel-field {
   margin-bottom: 22px;
@@ -1216,9 +1228,146 @@ img {
   }
   .form__proofs {
     position: absolute;
-    top: 0;
+    top: 1150px;
+    left: 40px;
+    display: block;
+    width: 88%;
+    background-color: transparent;
+    border: 2px solid #cccccc;
+  }
+  .form__proofs .form__proofs-title {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 435px;
+    margin: 0 auto;
+    color: #d22856;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    margin-top: -53px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .form__contacts-title--hidden {
+    display: block;
+  }
+  .form__contacts {
+    margin: 0 auto;
+    width: 88%;
+    background-color: transparent;
+    border: 2px solid #cccccc;
+    margin-bottom: 685px;
+  }
+  .form__contacts p {
+    color: #d22856;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: -53px;
+    width: 45%;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .form__textfield {
+    margin: 0 auto;
+    width: 88%;
+    margin-top: 730px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    border: 2px solid #cccccc;
+    margin-bottom: 65px;
+  }
+  .form__textfield-title {
+    width: 235px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    color: #d22856;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    margin-top: -16px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .form__textfield textarea {
+    height: 195px;
+  }
+  .form__btn {
+    float: left;
+    margin-left: 40px;
+  }
+  .form__form-warning {
+    float: right;
+    width: 180px;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__name-fields {
+    display: inline-block;
+    vertical-align: top;
+    width: 470px;
+    padding: 0;
+    margin: 0;
+    margin-left: 130px;
+    margin-bottom: 65px;
+  }
+  .form__name-field {
+    width: 340px;
+  }
+  .form__name-fields {
+    margin-bottom: -150px;
+  }
+  .form__name-field:nth-of-type(1) {
+    margin-bottom: 0;
+  }
+  .form__name-fields label:nth-child(2) .form__name-field {
+    width: 380px;
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+  .form__whatapp {
+    width: 435px;
+    height: 300px;
+    left: 635px;
+    top: 160px;
+  }
+  .form__contacts {
+    margin: 0 auto;
+    width: 940px;
+    margin-bottom: 0;
+  }
+  .form__proofs {
+    position: relative;
+    top: 620px;
     left: 0;
-    display: none;
+    display: block;
+    margin: 0 auto;
+    width: 940px;
+    background-color: transparent;
+    border: 2px solid #cccccc;
+    height: 235px;
+  }
+  .form__proofs-item-grupp {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .form__textfield {
+    margin: 0 auto;
+    width: 940px;
+    margin-top: 400px;
+    padding-top: 0;
+    padding-bottom: 50px;
+    border: 2px solid #cccccc;
+    margin-bottom: 65px;
+  }
+  .form__btn {
+    margin-left: 130px;
+  }
+  .form__form-warning {
+    margin-right: 130px;
   }
 }
 .page-footer__wrapper {

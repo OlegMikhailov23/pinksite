@@ -57,8 +57,8 @@
                     </div>
                     <div class="form__proofs">
                         <ul>
-                            <p>Ваши безбашенные
-                                <br> достижения в путешествии</p>
+                            <p class="form__proofs-title">Ваши безбашенные достижения в путешествии</p>
+                            <div class="form__proofs-item-grupp">
                             <li class="form__proofs-item">
                                 <input type="checkbox" name="selfie" id="selfie">
                                 <label for="selfie">Сделал селфи с акулой</label>
@@ -67,6 +67,8 @@
                                 <input type="checkbox" name="fry-on-beach" id="fry-on-beach">
                                 <label for="fry-on-beach">Обгорел на пляже</label>
                             </li>
+                            </div>
+                            <div class="form__proofs-item-grupp">
                             <li class="form__proofs-item">
                                 <input type="checkbox" name="sawchack" id="sawchack">
                                 <label for="sawchack">Видел Чака Норриса</label>
@@ -75,6 +77,8 @@
                                 <input type="checkbox" name="buysov" id="buysov">
                                 <label for="buysov">Накупил сувениров</label>
                             </li>
+                            </div>
+                            <div class="form__proofs-item-grupp">
                             <li class="form__proofs-item">
                                 <input type="checkbox" name="holdtower" id="holdtower">
                                 <label for="holdtower">Удержал башню</label>
@@ -83,9 +87,11 @@
                                 <input type="checkbox" name="hotelcrasher" id="hotelcrasher">
                                 <label for="hotelcrasher">Разгромил отель</label>
                             </li>
+                            </div>
                         </ul>
                     </div>
                     <div class="form__contacts">
+                        <p class="form__contacts-title  form__contacts-title--hidden">Контактная информация</p>
                         <label for="tel">Номерок телефончика
                             <input class="form__tel-field" type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
                         </label>
@@ -103,7 +109,7 @@
                         <label for="Windows">Windows Phone</label>
                     </div>
                     <div class="form__textfield">
-                        <p>Опишите свои эмоции</p>
+                        <p class="form__textfield-title">Опишите свои эмоции</p>
                         <textarea name="emotion" id="emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                     </div>
                     <button class="form__btn" type="submit">Отправить форму</button>

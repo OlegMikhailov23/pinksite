@@ -8,9 +8,10 @@
 }
 
 .form__wrapper {
+    .clearfix();
     position: relative;
     .container();
-    .padding-top-bottom (50px,0);
+    .padding-top-bottom (50px, 0);
     background: @body-bg;
 }
 
@@ -29,11 +30,18 @@
     display: none;
 }
 
-.form__name-fields, .form__proofs, .form__contacts, .form__whatapp, .form__textfield, .form__title {
-  .padding-left-right();
+.form__name-fields,
+.form__proofs,
+.form__contacts,
+.form__whatapp,
+.form__textfield,
+.form__title {
+    .padding-left-right();
 }
 
-.form__name-fields label, .form__contacts label, .form__textfield p {
+.form__name-fields label,
+.form__contacts label,
+.form__textfield p {
     .font-size (14px, 30px);
     position: relative;
     color: @contact-font-color;
@@ -56,15 +64,16 @@
     margin-top: 42px;
     background-color: @advantages-bg;
     & ul {
-       .zero-style();
-  }
+        .zero-style();
+    }
 }
 
 .form__whatapp {
     background-color: @advantages-bg;
 }
 
-.form__proofs  p, .form__whatapp p {
+.form__proofs p,
+.form__whatapp p {
     .zero-style();
     .font-size (14px, 18px);
     color: @contact-font-color;
@@ -73,11 +82,16 @@
     text-align: center;
 }
 
-.form__proofs  p {
+.form__proofs p {
     margin-bottom: 53px;
 }
 
-.form__name-field, .form__proofs-item label, .form__whatapp label, .form__tel-field, .form__email-field, .form__textfield textarea {
+.form__name-field,
+.form__proofs-item label,
+.form__whatapp label,
+.form__tel-field,
+.form__email-field,
+.form__textfield textarea {
     .font-size (18px, 30px);
     font-family: inherit;
     color: @main-font-color;
@@ -101,17 +115,19 @@
     .font-size (14px, 30px);
     color: @main-font-color;
     font-family: inherit;
-  & sup {
-      color: @contact-font-color;
-  }
+    & sup {
+        color: @contact-font-color;
+    }
 }
 
-.form__wrapper input::-webkit-input-placeholder, .form__wrapper textarea::-webkit-input-placeholder  { 
-   color: @main-font-color; 
+.form__wrapper input::-webkit-input-placeholder,
+.form__wrapper textarea::-webkit-input-placeholder {
+    color: @main-font-color;
 }
 
-.form__wrapper input:-moz-placeholder, .form__wrapper textarea:-moz-placeholder  { 
-   color: @main-font-color; 
+.form__wrapper input:-moz-placeholder,
+.form__wrapper textarea:-moz-placeholder {
+    color: @main-font-color;
 }
 
 .form__wrapper label {
@@ -122,6 +138,10 @@
     padding-bottom: 65px;
 }
 
+.form__proofs .form__proofs-title {
+    .padding-left-right (30px, 30px);
+}
+
 .form__proofs-item {
     padding-bottom: 60px;
 }
@@ -130,14 +150,14 @@
     display: none;
 }
 
-.form__proofs input[type="checkbox"] + label {
+.form__proofs input[type="checkbox"]+label {
     display: block;
     position: relative;
     cursor: pointer;
     padding-left: 70px;
 }
 
-.form__proofs input[type="checkbox"] + label::before {
+.form__proofs input[type="checkbox"]+label::before {
     content: "";
     position: absolute;
     display: block;
@@ -150,7 +170,7 @@
     left: 0;
 }
 
-.form__proofs input[type="checkbox"]:checked + label::after {
+.form__proofs input[type="checkbox"]:checked+label::after {
     content: "";
     position: absolute;
     display: block;
@@ -162,11 +182,16 @@
 }
 
 .form__contacts {
-   .padding-top-bottom (37px, 55px);
+    .padding-top-bottom (37px,
+    55px);
 }
 
 .form__contacts input {
-   .input-field ();
+    .input-field ();
+}
+
+.form__contacts-title--hidden {
+    display: none;
 }
 
 .form__tel-field {
@@ -174,7 +199,8 @@
 }
 
 .form__whatapp {
-    .padding-top-bottom (37px, 55px);
+    .padding-top-bottom (37px,
+    55px);
 }
 
 .form__whatapp p {
@@ -186,18 +212,18 @@
 }
 
 
-.form__whatapp input[type="radio"] + label:not(:last-child) {
+.form__whatapp input[type="radio"]+label:not(:last-child) {
     margin-bottom: 60px;
 }
 
-.form__whatapp input[type="radio"] + label {
+.form__whatapp input[type="radio"]+label {
     display: block;
     position: relative;
     cursor: pointer;
     padding-left: 70px;
 }
 
-.form__whatapp input[type="radio"] + label::before {
+.form__whatapp input[type="radio"]+label::before {
     content: "";
     position: absolute;
     display: block;
@@ -210,7 +236,7 @@
     left: 0;
 }
 
-.form__whatapp input[type="radio"]:checked + label::after {
+.form__whatapp input[type="radio"]:checked+label::after {
     content: "";
     position: absolute;
     display: block;
@@ -225,16 +251,17 @@
 .form__textfield {
     padding-top: 60px;
     margin-bottom: 47px;
-  & p {
-      text-align: center;
-  }
-  & textarea {
-      width: 100%;
-      padding-top: 22px;
-      .padding-left-right (20px, 20px);
-      outline: inherit;
-      border: 2px solid @border-color;
-  }
+    & p {
+        text-align: center;
+    }
+    & textarea {
+        width: 100%;
+        padding-top: 22px;
+        .padding-left-right (20px,
+        20px);
+        outline: inherit;
+        border: 2px solid @border-color;
+    }
 }
 
 .form__btn {
@@ -247,58 +274,227 @@
     text-align: center;
 }
 
-@media @tablet-widths { 
+@media @tablet-widths {
     .form__title {
-    .font-size (18px, 30px);
-    .padding-left-right (100px, 100px);
-    padding-bottom: 0;
-  }
-    
-  .form__title--hidden {
-      display: block;
-      padding-bottom: 50px;
-  }
-  
-  .form__name-fields, .form__proofs, .form__contacts, .form__whatapp, .form__textfield, .form__title {
-  .padding-left-right (40px, 40px);
-  }
-  
+        .font-size (18px,
+        30px);
+        .padding-left-right (100px,
+        100px);
+        padding-bottom: 0;
+    }
+
+    .form__title--hidden {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .form__name-fields,
+    .form__proofs,
+    .form__contacts,
+    .form__whatapp,
+    .form__textfield,
+    .form__title {
+        .padding-left-right (40px,
+        40px);
+    }
+
+    .form__name-fields {
+        margin-bottom: 430px;
+    }
+
+    .form__name-fields label {
+        display: block;
+    }
+
+    .form__name-field {
+        width: 83%;
+        margin-left: 20px;
+    }
+
+    .form__name-fields label:nth-child(2) .form__name-field {
+        width: 90%;
+    }
+
+    .form__whatapp {
+        position: absolute;
+        top: 460px;
+        left: 40px;
+        width: 88%;
+        background-color: transparent;
+        border: 2px solid @border-color;
+        & p {
+            background-color: #ffffff;
+            margin: 0 auto;
+            margin-top: -45px;
+            width: 65%;
+        }
+    }
+
+    .form__proofs {
+        position: absolute;
+        top: 1150px;
+        left: 40px;
+        display: block;
+        width: 88%;
+        background-color: transparent;
+        border: 2px solid @border-color;
+    }
+
+    .form__proofs .form__proofs-title {
+        .padding-left-right (0px,
+        0px);
+        width: 435px;
+        margin: 0 auto;
+        color: @contact-font-color;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        margin-top: -53px;
+        margin-bottom: 55px;
+        .font-size (14px,
+        30px);
+        text-align: center;
+    }
+
+    .form__contacts-title--hidden {
+        display: block;
+    }
+
+    .form__contacts {
+        margin: 0 auto;
+        width: 88%;
+        background-color: transparent;
+        border: 2px solid @border-color;
+        margin-bottom: 685px;
+        & p {
+            width: 45%;
+            color: @contact-font-color;
+            text-transform: uppercase;
+            background-color: #ffffff;
+            margin: 0 auto;
+            margin-top: -53px;
+            width: 45%;
+            .font-size (14px,
+            30px);
+            text-align: center;
+        }
+    }
+
+    .form__textfield {
+        margin: 0 auto;
+        width: 88%;
+        margin-top: 730px;
+        padding-top: 0;
+        padding-bottom: 50px;
+        border: 2px solid @border-color;
+        margin-bottom: 65px;
+    }
+
+    .form__textfield-title {
+        width: 235px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        color: @contact-font-color;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        margin-top: -16px;
+        .font-size (14px,
+        30px);
+        text-align: center;
+    }
+
+    .form__textfield textarea {
+        height: 195px;
+    }
+
+    .form__btn {
+        float: left;
+        margin-left: 40px;
+    }
+
+
+    .form__form-warning {
+        float: right;
+        width: 180px;
+        margin-right: 40px;
+    }
+}
+
+@media @desktop-widths {
   .form__name-fields {
-     margin-bottom: 430px;
-  }
-  
-  .form__name-fields label {
-      display: block;
+      display: inline-block;
+      margin-left: 130px;
+      vertical-align: top;
+      width: 470px;
+      padding: 0;
+      margin: 0;
+      margin-left: 130px;
+      margin-bottom: 65px;
   }
   
   .form__name-field {
-      width: 83%;
-      margin-left: 20px;
+      width: 340px;
   }
   
+  .form__name-fields {
+    margin-bottom: -150px;
+  }
+  
+  .form__name-field:nth-of-type(1) {
+    margin-bottom: 0;
+}
+  
   .form__name-fields label:nth-child(2) .form__name-field {
-      width: 90%;
+      width: 380px;
+      margin-top: 58px;
+      margin-bottom: 58px;
   }
   
   .form__whatapp {
-      position: absolute;
-      top: 460px;
-      left: 40px;
-      width: 88%;
-      background-color: transparent;
-      border: 2px solid @border-color;
-    & p {
-      background-color: #ffffff;
+      width: 435px;
+      height: 300px;
+      left: 635px;
+      top: 160px;
+  }
+  
+  .form__contacts {
       margin: 0 auto;
-      margin-top: -45px;
-      width: 65%;
-    }
+      width: 940px;
+      margin-bottom: 0;
   }
   
   .form__proofs {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: none;
+        position: relative;
+        top: 620px;
+        left: 0;
+        display: block;
+        margin: 0 auto;
+        width: 940px;
+        background-color: transparent;
+        border: 2px solid @border-color;
+        height: 235px; 
+    }
+  
+  .form__proofs-item-grupp {
+      display: inline-block;
+      vertical-align: top;
   }
+  
+  .form__textfield {
+        margin: 0 auto;
+        width: 940px;
+        margin-top: 400px;
+        padding-top: 0;
+        padding-bottom: 50px;
+        border: 2px solid @border-color;
+        margin-bottom: 65px;
+    }
+  
+  .form__btn {
+        margin-left: 130px;
+    }
+
+
+    .form__form-warning {
+        margin-right: 130px;
+    }
 }
