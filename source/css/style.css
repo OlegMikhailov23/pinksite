@@ -1,3 +1,21 @@
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff"), url("../fonts/opensanslight.woff2");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+}
 .body-wrapper {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -25,7 +43,7 @@ img {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: -66px;
+  margin-bottom: -69px;
   min-height: 69px;
   background-color: rgba(28, 38, 49, 0.3);
   padding-top: 20px;
@@ -122,6 +140,15 @@ img {
   top: 0;
   left: 0;
   opacity: 1;
+  z-index: 1000;
+}
+.main-nav--nojs {
+  display: block;
+}
+.main-nav--open {
+  display: block;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 .main-nav__list {
   width: 320px;
@@ -152,11 +179,14 @@ img {
   padding-right: 20px;
   display: block;
   background-color: #283645;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 19px;
+  padding-bottom: 21px;
   text-align: center;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #000000;
+}
+.main-nav__list-item--hidden {
+  min-height: 70px;
 }
 .main-nav__list-item a:not(.main-nav__logo-link) {
   color: #ffffff;
