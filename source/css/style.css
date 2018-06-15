@@ -78,6 +78,7 @@ img {
   background: none;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .page-header__open-btn {
   width: 50px;
@@ -141,9 +142,31 @@ img {
   left: 0;
   opacity: 1;
   z-index: 1000;
+  -webkit-animation: main-nav-bounce 0.1s;
+          animation: main-nav-bounce 0.1s;
 }
 .main-nav--nojs {
   display: block;
+}
+@-webkit-keyframes main-nav-bounce {
+  0% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes main-nav-bounce {
+  0% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 .main-nav--open {
   display: block;
@@ -184,6 +207,11 @@ img {
   text-align: center;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #000000;
+}
+.main-nav__list-item:hover {
+  background-color: #3c5064;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .main-nav__list-item--hidden {
   min-height: 70px;

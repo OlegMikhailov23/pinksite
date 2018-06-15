@@ -13,10 +13,20 @@
     left: 0;
     opacity: 1;
     z-index: 1000;
+    animation: main-nav-bounce 0.1s;
 }
 
 .main-nav--nojs {
     display: block;
+}
+
+@keyframes main-nav-bounce {
+    0% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .main-nav--open {
@@ -39,6 +49,11 @@
     text-align: center;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #000000;
+}
+
+.main-nav__list-item:hover {
+    background-color: #3c5064;
+    transition: 0.3s;
 }
 
 .main-nav__list-item--hidden {
