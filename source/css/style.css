@@ -709,6 +709,7 @@ img {
   width: 320px;
   margin: 0 auto;
   padding-top: 65px;
+  overflow: hidden;
 }
 @media (min-width: 700px) {
   .price__wrapper {
