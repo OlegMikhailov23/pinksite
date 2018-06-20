@@ -20,15 +20,6 @@
     display: block;
 }
 
-@keyframes main-nav-bounce {
-    0% {
-        transform: translateY(-120px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
 .main-nav--open {
     display: block;
     transition: background-color 0.5s ease;
@@ -75,10 +66,40 @@
 }
 
 .page-header__close-btn {
+    position: relative;
     float: right;
     .size (50px,
     25px);
-    background: url("../../img/icon-menu-cross.svg") no-repeat center;
+}
+
+.page-header__close-btn::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    
+    width: 30px;
+    height: 3px;
+    
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  
+    border-radius: 5px;
+}
+
+.page-header__close-btn::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    
+    width: 30px;
+    height: 3px;
+    
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  
+    border-radius: 5px;
 }
 
 @media @desktop-widths {
@@ -87,19 +108,56 @@
     width: 625px;
     float: left;
     position: relative;
+    animation: none;
   }
   .main-nav__list {
       font-size: 0;
-      padding-top: 15px;
       margin-left: 168px;
   }
   
-  .main-nav__list-item {
+  .main-nav__list li:not(:first-of-type) {
       display: inline-block;
       vertical-align: top;
       padding: 0;
+  }
+  
+  .main-nav__list-item {
+      position: relative;
       border: none;
       background-color: transparent;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  
+  .main-nav__list-item:hover {
+    background-color: transparent;
+  }
+  
+  .main-nav__list-item:hover::before {
+    content: "";
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: #fff;
+    animation: main-nav-after-bounce 0.2s;
+  }
+  
+  .main-nav__list-item:active {
+     color: @nav-active-color;
+  }
+  
+  .main-nav__list-item:active::before {
+    content: "";
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: @nav-active-color;
   }
   
   .main-nav__list-item:not(:last-of-type) {
@@ -109,6 +167,15 @@
   .main-nav__list-item--hidden {
       display: none;
   }
+  
+  .main-nav__list-item--active {
+      opacity: 0.3;
+      &:hover::before {
+        display: none;
+      }
+  }
+  
+ 
   
   
 }
