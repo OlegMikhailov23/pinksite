@@ -48,12 +48,12 @@
 }
 @-webkit-keyframes reviews-bounce {
   0% {
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
   25% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -62,12 +62,12 @@
 }
 @keyframes reviews-bounce {
   0% {
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
   25% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -115,14 +115,14 @@ img {
   height: auto;
 }
 .page-header {
+  width: 320px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 320px;
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: -69px;
@@ -204,11 +204,6 @@ img {
     padding-bottom: 0;
     margin-bottom: -115px;
   }
-  .page-header::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   .page-header__logo-link {
     width: 150px;
     height: 44px;
@@ -216,20 +211,6 @@ img {
   }
   .page-header__open {
     display: none;
-  }
-}
-.main-nav__wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-@media (min-width: 700px) {
-  .main-nav__wrapper {
-    width: 700px;
-  }
-}
-@media (min-width: 1200px) {
-  .main-nav__wrapper {
-    width: 1200px;
   }
 }
 .main-nav {
@@ -363,14 +344,13 @@ img {
   .main-nav {
     display: block;
     width: 625px;
-    float: left;
     position: relative;
     -webkit-animation: none;
             animation: none;
   }
   .main-nav__list {
     font-size: 0;
-    margin-left: 168px;
+    max-width: 635px;
   }
   .main-nav__list li:not(:first-of-type) {
     display: inline-block;
@@ -1733,8 +1713,7 @@ img {
 }
 @media (min-width: 1200px) {
   .page-footer__wrapper {
-    padding-left: 130px;
-    padding-right: 130px;
+    margin: 0 auto;
   }
 }
 .gallery__item {

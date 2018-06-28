@@ -3,9 +3,9 @@
 @import "../mixin.less";
 
 .page-header {
+    .container();
     display: flex;
     justify-content: space-between;
-    .container();
     .padding-left-right (20px, 20px);
     margin-bottom: -69px;
     min-height: 69px;
@@ -76,7 +76,6 @@
 
 @media @desktop-widths {
   .page-header {
-      .clearfix();
       .padding-left-right (130px, 130px);
       padding-bottom: 0;
       margin-bottom: -115px;
