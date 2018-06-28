@@ -3,6 +3,8 @@
 @import "../mixin.less";
 
 .page-header {
+    display: flex;
+    justify-content: space-between;
     .container();
     .padding-left-right (20px, 20px);
     margin-bottom: -69px;
@@ -12,12 +14,7 @@
     position: relative;
 }
 
-.page-header__logo {
-    float: left;
-}
-
 .page-header__logo-link {
-    float: left;
     display: block;
     .size(75px, 23px);
     font-size: 0;
@@ -26,7 +23,6 @@
 
 .page-header__open {
     position: relative;
-    float: right;
 }
 
 .page-header__btn {
@@ -60,7 +56,7 @@
     background-color: @nav-active-color;
     box-shadow: 0 10px 0 0 @nav-active-color,
                 0 20px 0 0 @nav-active-color;
-    transition: 0.15s;
+    transition: 0.3s;
 }
 
 @media @tablet-widths {

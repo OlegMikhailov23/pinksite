@@ -56,8 +56,12 @@
     .font-size(18px, 32px);
 }
 
+.main-nav__list-item--hidden {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-nav__logo-link {
-    float: left;
     display: block;
     .size(75px, 23px);
     font-size: 0;
@@ -66,7 +70,6 @@
 
 .page-header__close-btn {
     position: relative;
-    float: right;
     .size (50px,
     25px);
 }
@@ -75,7 +78,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: 0px;
+    left: 15px;
     
     width: 30px;
     height: 3px;
@@ -90,7 +93,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: 0px;
+    left: 15px;
     
     width: 30px;
     height: 3px;
@@ -99,6 +102,21 @@
     transform: rotate(-45deg);
   
     border-radius: 5px;
+}
+
+
+.page-header__close-btn:hover::after {
+   background-color: @nav-active-color;
+   transition: 0.4s;
+   transform: rotate(135deg);
+   perspective: 150px;
+}
+
+.page-header__close-btn:hover::before {
+   background-color: @nav-active-color;
+   transition: 0.4s;
+   transform: rotate(-135deg);
+   perspective: 150px;
 }
 
 @media @desktop-widths {

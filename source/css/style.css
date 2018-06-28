@@ -46,6 +46,34 @@
             transform: translateX(0px);
   }
 }
+@-webkit-keyframes reviews-bounce {
+  0% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  25% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes reviews-bounce {
+  0% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  25% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
 @font-face {
   font-weight: 300;
   font-family: "Open Sans";
@@ -87,6 +115,12 @@ img {
   height: auto;
 }
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 320px;
   margin: 0 auto;
   padding-left: 20px;
@@ -107,11 +141,7 @@ img {
     width: 1200px;
   }
 }
-.page-header__logo {
-  float: left;
-}
 .page-header__logo-link {
-  float: left;
   display: block;
   width: 75px;
   height: 23px;
@@ -120,7 +150,6 @@ img {
 }
 .page-header__open {
   position: relative;
-  float: right;
 }
 .page-header__btn {
   font-size: 0;
@@ -150,8 +179,8 @@ img {
   background-color: #d22856;
   -webkit-box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
           box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 700px) {
   .page-header {
@@ -268,8 +297,15 @@ img {
   font-size: 18px;
   line-height: 32px;
 }
+.main-nav__list-item--hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .main-nav__logo-link {
-  float: left;
   display: block;
   width: 75px;
   height: 23px;
@@ -278,7 +314,6 @@ img {
 }
 .page-header__close-btn {
   position: relative;
-  float: right;
   width: 50px;
   height: 25px;
 }
@@ -286,7 +321,7 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 15px;
   width: 30px;
   height: 3px;
   background-color: #ffffff;
@@ -298,13 +333,31 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 15px;
   width: 30px;
   height: 3px;
   background-color: #ffffff;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   border-radius: 5px;
+}
+.page-header__close-btn:hover::after {
+  background-color: #d22856;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-perspective: 150px;
+          perspective: 150px;
+}
+.page-header__close-btn:hover::before {
+  background-color: #d22856;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-perspective: 150px;
+          perspective: 150px;
 }
 @media (min-width: 1200px) {
   .main-nav {
@@ -373,6 +426,8 @@ img {
   }
 }
 .intro__wrapper {
+  position: relative;
+  z-index: -1;
   width: 320px;
   margin: 0 auto;
   min-height: 460px;
@@ -403,6 +458,14 @@ img {
   font-weight: 300;
   font-family: inherit;
   text-align: center;
+}
+.intro__pic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 258px;
+  height: 286px;
+  background: url("../../img/iphone-hand-mobile@1x.png") center no-repeat;
 }
 @media (min-width: 700px) {
   .intro__wrapper {
@@ -761,6 +824,54 @@ img {
   color: inherit;
   text-align: center;
   font-weight: 400;
+}
+.reviews__item {
+  padding-top: 50px;
+  min-height: 300px;
+  display: none;
+  -webkit-animation: reviews-bounce 0.6s;
+          animation: reviews-bounce 0.6s;
+}
+.reviews__toggles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 65px;
+  margin-top: 10px;
+}
+.slider__toggle {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #bec2c7;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__toggle:not(:last-of-type) {
+  margin-right: 14px;
+}
+#reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
+#reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
+#reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
+  border: 3px solid #283645;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+#reviews-input-1:checked ~ .reviews__items .reviews__item:nth-child(1) {
+  display: block;
+}
+#reviews-input-2:checked ~ .reviews__items .reviews__item:nth-child(2) {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+#reviews-input-3:checked ~ .reviews__items .reviews__item:nth-child(3) {
+  display: block;
 }
 @media (min-width: 700px) {
   .reviews__wrapper {
@@ -1554,11 +1665,6 @@ img {
     width: 1200px;
   }
 }
-.page-footer__wrapper::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .page-footer-hidden {
   display: none;
 }
@@ -1605,6 +1711,16 @@ img {
     display: block;
   }
   .page-footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-top: 0;
     padding-left: 40px;
     padding-right: 40px;
@@ -1612,24 +1728,13 @@ img {
     padding-bottom: 35px;
   }
   .page-footer__footer-logo {
-    float: left;
-    margin: auto;
-    margin-right: 70px;
-  }
-  .page-footer__social-links {
-    float: left;
-  }
-  .page-footer__develop {
-    float: right;
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
   .page-footer__wrapper {
     padding-left: 130px;
     padding-right: 130px;
-  }
-  .page-footer__footer-logo {
-    margin-right: 230px;
   }
 }
 .gallery__item {

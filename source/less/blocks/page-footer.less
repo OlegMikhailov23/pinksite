@@ -5,7 +5,6 @@
 .page-footer__wrapper {
     .container();
     margin-top: 66px;
-    .clearfix();
 }
 
 .page-footer-hidden {
@@ -60,32 +59,22 @@
   }
   
   .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
     margin-top: 0;
     .padding-left-right (40px, 40px);
     .padding-top-bottom (35px, 35px);
   }
   
   .page-footer__footer-logo {
-      float: left;
-      margin: auto;
-      margin-right: 70px;
-  }
-  
-  .page-footer__social-links {
-      float: left;
-  }
-  
-  .page-footer__develop {
-      float: right;
+      margin: 0;
   }
 }
 
 @media @desktop-widths {
   .page-footer__wrapper {
     .padding-left-right (130px, 130px);
-  }
-  
-  .page-footer__footer-logo {
-      margin-right: 230px;
   }
 }
