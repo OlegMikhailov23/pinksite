@@ -76,6 +76,11 @@
     border: 3px solid #f2f2f2;
 }
 
+.price__toggles .slider__toggle:hover {
+    background-color: @main-color-dark;
+    transition: 0.3s;
+}
+
 
 #price-input-1:checked ~ .price__toggles label[for="price-input-1"],
 #price-input-2:checked ~ .price__toggles label[for="price-input-2"],
@@ -129,6 +134,10 @@
     .font-size (14px, 30px);
     .padding-left-right (15px, 25px);
     .padding-top-bottom (15px, 17px);
+  }
+  
+  .price__toggles {
+    display: none;
   }
 }
 

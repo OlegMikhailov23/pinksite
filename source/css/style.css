@@ -459,6 +459,23 @@ img {
     line-height: 52px;
     margin-top: 80px;
   }
+  .intro__pic {
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+    width: 650px;
+    height: 545px;
+    background: url("../../img/iphone-hand-tablet.png") center no-repeat;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__wrapper {
+    min-height: 727px;
+    background: #1d2631 url("../../img/intro-bg-desktop.jpg") no-repeat;
+  }
+  .intro__pic {
+    left: 330px;
+  }
 }
 .download-app {
   position: relative;
@@ -681,8 +698,8 @@ img {
     left: 40px;
     width: 268px;
     height: 558px;
-    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
-    background-size: cover;
+    background: url("../../img/iphone-tablet.png") no-repeat;
+    background-size: 100% 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -834,6 +851,11 @@ img {
 .slider__toggle:not(:last-of-type) {
   margin-right: 14px;
 }
+.slider__toggle:hover {
+  background-color: #1d2631;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 #reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
 #reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
 #reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
@@ -857,7 +879,6 @@ img {
   .reviews__wrapper {
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 125px;
   }
   .reviews__promo-text {
     display: block;
@@ -870,8 +891,11 @@ img {
   .reviews__promo-text-article {
     padding-bottom: 18px;
   }
+  .reviews__item {
+    min-height: 150px;
+  }
   .reviews__items {
-    margin-top: 300px;
+    margin-top: 200px;
   }
   .reviews__auhor-name {
     font-size: 20px;
@@ -1002,6 +1026,11 @@ img {
   background-color: #bec2c7;
   border: 3px solid #f2f2f2;
 }
+.price__toggles .slider__toggle:hover {
+  background-color: #1d2631;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 #price-input-1:checked ~ .price__toggles label[for="price-input-1"],
 #price-input-2:checked ~ .price__toggles label[for="price-input-2"],
 #price-input-3:checked ~ .price__toggles label[for="price-input-3"] {
@@ -1061,6 +1090,9 @@ img {
     padding-top: 15px;
     padding-bottom: 17px;
   }
+  .price__toggles {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .price__table-header {
@@ -1083,6 +1115,7 @@ img {
   }
 }
 .contacts {
+  position: relative;
   min-height: 610px;
   background: url("../../img/bg-map-mobile@1x.png") no-repeat;
   width: 320px;
@@ -1097,6 +1130,19 @@ img {
   .contacts {
     width: 1200px;
   }
+}
+.contacts::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 150px;
+  bottom: 35px;
+  width: 35px;
+  height: 35px;
+  border: 10px solid #f2f2f2;
+  background-color: #d22856;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .contacts__wrapper {
   background-color: #ffffff;
@@ -1194,6 +1240,9 @@ img {
   .contacts {
     background-size: cover;
     min-height: 720px;
+  }
+  .contacts::before {
+    display: none;
   }
 }
 @media (min-width: 1200px) {

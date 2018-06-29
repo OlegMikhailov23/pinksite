@@ -3,9 +3,24 @@
 @import "../mixin.less";
 
 .contacts {
+    position: relative;
     min-height: 610px;
     background: url("../../img/bg-map-mobile@1x.png") no-repeat;
     .container();
+}
+
+.contacts::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 150px;
+    bottom: 35px;
+    width: 35px;
+    height: 35px;
+    border: 10px solid #f2f2f2;
+    background-color: @contact-font-color;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .contacts__wrapper {
@@ -95,6 +110,10 @@
   .contacts {
       background-size: cover;
       min-height: 720px;
+  }
+  
+  .contacts::before{
+    display: none;
   }
 }
 

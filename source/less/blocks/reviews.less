@@ -87,6 +87,11 @@
 margin-right: 14px;
 }
 
+.slider__toggle:hover {
+  background-color: @main-color-dark;
+  transition: 0.3s;
+}
+
 #reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
 #reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
 #reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
@@ -112,7 +117,7 @@ margin-right: 14px;
 @media @tablet-widths {
   .reviews__wrapper {
       .padding-left-right(40px, 40px);
-      padding-bottom: 125px;
+      
   }
   
   .reviews__promo-text {
@@ -129,8 +134,12 @@ margin-right: 14px;
       padding-bottom: 18px;
   }
   
+  .reviews__item {
+      min-height: 150px;
+  }
+  
   .reviews__items {
-      margin-top: 300px;
+      margin-top: 200px;
   }
   
   .reviews__auhor-name {
