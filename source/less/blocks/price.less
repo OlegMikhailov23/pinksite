@@ -12,10 +12,11 @@
 
 .price__items {
     .zero-style();
-    margin-left: -435px;
+    margin-left: -465px;
 }
 
 .price__table-header {
+    position: relative;
     .zero-style();
     .padding-left-right (88px, 88px);
     .padding-top-bottom (25px, 25px);
@@ -26,6 +27,17 @@
     .font-size (22px, 30px);
     font-weight: 700;
     font-family: inherit;
+    text-transform: uppercase;
+}
+
+.price__items .price__table-header:nth-of-type(3)::before {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background: url("../../img/bg-hit.svg") no-repeat center;
+  top: 0;
+  left: -1px;
 }
 
 .price__table-header p {
@@ -50,6 +62,42 @@
 .price__table-field-hidden-th {
     background-color: transparent;
     border-left: none;
+}
+
+.price__toggles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    margin-top: 10px;
+}
+
+.price__toggles .slider__toggle {
+    background-color: #bec2c7;
+    border: 3px solid #f2f2f2;
+}
+
+
+#price-input-1:checked ~ .price__toggles label[for="price-input-1"],
+#price-input-2:checked ~ .price__toggles label[for="price-input-2"],
+#price-input-3:checked ~ .price__toggles label[for="price-input-3"] {
+    border: 3px solid @main-font-color;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+
+#price-input-1:checked ~ .price__items {
+    transform: translate(300px);
+    transition: 0.4s;
+}
+
+#price-input-2:checked ~ .price__items {
+    transform: translate(0px);
+    transition: 0.4s;
+}
+
+#price-input-3:checked ~ .price__items {
+    transform: translate(-300px);
+    transition: 0.4s;
 }
 
 @media @tablet-widths {
