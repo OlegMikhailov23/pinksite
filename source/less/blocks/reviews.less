@@ -121,6 +121,7 @@ margin-right: 14px;
   }
   
   .reviews__promo-text {
+      position: relative;
       display: block;
       padding-left: 310px;
       padding-top: 100px;
@@ -160,6 +161,19 @@ margin-right: 14px;
       color: inherit;
       font-weight: 400;
       text-align: center;
+  }
+  
+  .reviews__promo-text::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 250px;
+      height: 290px;
+      background-image: url("../../img/timer.png");
+      background-position: center;
+      background-repeat: no-repeat;
   }
 }
 

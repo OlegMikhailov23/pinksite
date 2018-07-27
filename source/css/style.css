@@ -196,6 +196,12 @@ img {
     height: 40px;
     background: url("../../img/logotype-white-tablet.png") center no-repeat;
   }
+  .page-header__open-btn::before {
+    height: 4px;
+  }
+  .page-header__open {
+    top: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .page-header {
@@ -675,7 +681,6 @@ img {
   .advantages__quote-answer {
     padding-left: 180px;
     padding-right: 180px;
-    padding-bottom: 100px;
   }
   .advantages__item-list {
     padding-top: 25px;
@@ -881,6 +886,7 @@ img {
     padding-right: 40px;
   }
   .reviews__promo-text {
+    position: relative;
     display: block;
     padding-left: 310px;
     padding-top: 100px;
@@ -915,6 +921,18 @@ img {
     color: inherit;
     font-weight: 400;
     text-align: center;
+  }
+  .reviews__promo-text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    height: 290px;
+    background-image: url("../../img/timer.png");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -1058,6 +1076,24 @@ img {
   transition: 0.4s;
 }
 @media (min-width: 700px) {
+  #price-input-1:checked ~ .price__items {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #price-input-2:checked ~ .price__items {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #price-input-3:checked ~ .price__items {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
   .price__wrapper {
     padding-top: 35px;
     padding-bottom: 68px;
@@ -1089,6 +1125,7 @@ img {
     padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 17px;
+    white-space: nowrap;
   }
   .price__toggles {
     display: none;
@@ -1112,6 +1149,12 @@ img {
     padding-right: 65px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .price__items {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
 }
 .contacts {
@@ -1243,6 +1286,15 @@ img {
   }
   .contacts::before {
     display: none;
+  }
+}
+@media (min-width: 700px) {
+  .contacts::before {
+    bottom: 150px;
+    left: 0;
+  }
+  .contacts {
+    background: url("../../img/map-tablet.jpg") no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -1786,6 +1838,9 @@ img {
   text-align: center;
   padding-top: 45px;
 }
+.page-footer__link-tv {
+  background: url("../../img/icon-twitter.svg") center no-repeat;
+}
 @media (min-width: 700px) {
   .page-footer-hidden {
     display: block;
@@ -1809,6 +1864,7 @@ img {
   }
   .page-footer__footer-logo {
     margin: 0;
+    background: url("../../img/logotype-blue-tablet.svg") no-repeat;
   }
 }
 @media (min-width: 1200px) {
