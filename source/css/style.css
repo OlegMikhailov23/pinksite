@@ -148,6 +148,9 @@ img {
   font-size: 0;
   background: url("../../img/logo-pink-white-mobile.svg") center no-repeat;
 }
+.page-header__logo-link:hover {
+  background: url("../../img/logo-pink-white-mobile-hover.svg") center no-repeat;
+}
 .page-header__open {
   position: relative;
 }
@@ -187,14 +190,17 @@ img {
     min-height: 110px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: -110px;
+    margin-bottom: -115px;
     padding-top: 25px;
     padding-bottom: 50px;
   }
   .page-header__logo-link {
     width: 147px;
     height: 40px;
-    background: url("../../img/logotype-white-tablet.png") center no-repeat;
+    background: url("../../img/logotype-white-tablet.svg") center no-repeat;
+  }
+  .page-header__logo-link:hover {
+    background: url("../../img/logotype-white-tablet-hover.svg") center no-repeat;
   }
   .page-header__open-btn::before {
     height: 4px;
@@ -213,7 +219,7 @@ img {
   .page-header__logo-link {
     width: 150px;
     height: 44px;
-    background: url("../../img/logotype-white-desktop.png") center no-repeat;
+    background: url("../../img/logotype-white-desktop.svg") center no-repeat;
   }
   .page-header__open {
     display: none;
@@ -432,6 +438,14 @@ img {
     width: 1200px;
   }
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro__wrapper {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 320px 462px;
+    background-size: 215% 100%;
+    background-position: center;
+  }
+}
 .intro__header {
   padding: 0;
   margin: 0;
@@ -453,6 +467,12 @@ img {
   height: 286px;
   background: url("../../img/iphone-hand-mobile@1x.png") center no-repeat;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro__pic {
+    background-image: url("../../img/iphone-hand-mobile@2x.png");
+    background-size: 258px 286px;
+  }
+}
 @media (min-width: 700px) {
   .intro__wrapper {
     min-height: 727px;
@@ -471,7 +491,8 @@ img {
     bottom: 0;
     width: 650px;
     height: 545px;
-    background: url("../../img/iphone-hand-tablet.png") center no-repeat;
+    background-image: url("../../img/iphone-hand-tablet.png");
+    background-size: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -481,6 +502,30 @@ img {
   }
   .intro__pic {
     left: 330px;
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-size: 950px 545px;
+  }
+}
+@media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 700px) and (min-resolution: 144dpi) {
+  .intro__wrapper {
+    background-image: url("../../img/bg-back-tablet@2x.jpg");
+    background-size: 160% 100%;
+    background-position: center;
+  }
+  .intro__pic {
+    background-image: url("../../img/iphone-hand-tablet@2x.png");
+    background-size: 700px 545px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
+  .intro__wrapper {
+    background-image: url("../../img/bg-back-desktop@2x.jpg");
+    background-size: 160% 100%;
+    background-position: center;
+  }
+  .intro__pic {
+    background-image: url("../../img/iphone-hand-desktop@2x.png");
+    background-size: 140% 100%;
   }
 }
 .download-app {
@@ -534,7 +579,14 @@ img {
   border: 3px solid #ffffff;
   border-radius: 30px;
   font-family: inherit;
+  font-weight: 700;
   cursor: pointer;
+}
+.download-app__btn:hover {
+  background-color: #ffffff;
+  color: #d22856;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .download-app__logo {
   display: inline-block;
@@ -766,6 +818,18 @@ img {
     width: 1200px;
   }
 }
+/*
+.reviews__wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-size: cover;
+    bottom: -89px;
+    left: 0;
+}*/
 .reviews__promo-text,
 .reviews__auhor-detail {
   display: none;
@@ -880,11 +944,27 @@ img {
 #reviews-input-3:checked ~ .reviews__items .reviews__item:nth-child(3) {
   display: block;
 }
+.triangle {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: -37px;
+}
 @media (min-width: 700px) {
   .reviews__wrapper {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .triangle {
+    bottom: -59px;
+  }
+  /*
+  .reviews__wrapper::after {
+    background-size:  100% 1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }*/
   .reviews__promo-text {
     position: relative;
     display: block;
