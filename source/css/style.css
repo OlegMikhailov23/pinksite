@@ -1055,6 +1055,18 @@ img {
   top: 0;
   left: -1px;
 }
+.price__items .price__table-header:nth-of-type(3)::after {
+  content: "ХИТ";
+  font-size: 14px;
+  line-height: 30px;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 5px;
+  left: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 .price__table-header p {
   padding: 0;
   margin: 0;
@@ -1068,6 +1080,7 @@ img {
   font-family: inherit;
 }
 .price__table-field {
+  position: relative;
   padding-left: 17px;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -1128,6 +1141,19 @@ img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.price__table-field-mark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+.price__table-field-mark--check {
+  background: url("../../img/icon-yes-green.svg") no-repeat center;
+}
+.price__table-field-mark--no {
+  background: url("../../img/icon-no-red.svg") no-repeat center;
+}
 @media (min-width: 700px) {
   #price-input-1:checked ~ .price__items {
     -webkit-transform: translate(0px);
@@ -1183,6 +1209,9 @@ img {
   .price__toggles {
     display: none;
   }
+  .price__table-field-mark {
+    right: 60px;
+  }
 }
 @media (min-width: 1200px) {
   .price__wrapper {
@@ -1212,6 +1241,9 @@ img {
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
+  .price__table-field-mark {
+    right: 95px;
+  }
 }
 .contacts {
   position: relative;
@@ -1228,6 +1260,12 @@ img {
 @media (min-width: 1200px) {
   .contacts {
     width: 1200px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contacts {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-size: 320px 645px;
   }
 }
 .contacts::before {
@@ -1363,6 +1401,22 @@ img {
     padding-right: 300px;
     font-size: 50px;
     line-height: 52px;
+  }
+  .contacts {
+    background: url("../../img/bg-map1@x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 700px) and (min-resolution: 144dpi) {
+  .contacts {
+    background: url("../../img/bg-map-tablet@2x.jpg") no-repeat;
+    background-size: 700px 840px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
+  .contacts {
+    background: url("../../img/bg-map-desktop@2x.jpg") no-repeat;
+    background-size: cover;
   }
 }
 .form {
@@ -1868,6 +1922,9 @@ img {
   background: url("../../img/logo-pink-blue-mobile.svg") no-repeat;
   font-size: 0;
 }
+.page-footer__footer-logo a:hover {
+  background: url("../../img/logotype-white-tablet-hover.svg") no-repeat;
+}
 .page-footer__develop span {
   font-size: 14px;
   line-height: 18px;
@@ -1887,6 +1944,14 @@ img {
   border-radius: 50%;
   font-size: 0;
 }
+.page-footer__social-link:hover {
+  border-color: #283645;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.page-footer__social-link:active {
+  opacity: 0.4;
+}
 .page-footer__social-link:not(:last-of-type) {
   margin-right: 12px;
 }
@@ -1896,6 +1961,30 @@ img {
 }
 .page-footer__link-tv {
   background: url("../../img/icon-twitter.svg") center no-repeat;
+}
+.page-footer__link-fc {
+  background: url("../../img/icon-facebook.svg") center no-repeat;
+}
+.page-footer__link-you {
+  background: url("../../img/icon-youtube.svg") center no-repeat;
+}
+.page-footer__develop a {
+  display: inline-block;
+  vertical-align: text-bottom;
+  width: 27px;
+  height: 35px;
+  font-size: 0;
+  background-image: url("../../img/htmlacademy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-footer__develop a:hover {
+  background-image: url("../../img/htmlacademy-hover.svg");
+}
+.page-footer__develop span {
+  position: relative;
+  bottom: 8px;
 }
 @media (min-width: 700px) {
   .page-footer-hidden {
@@ -1920,7 +2009,11 @@ img {
   }
   .page-footer__footer-logo {
     margin: 0;
-    background: url("../../img/logotype-blue-tablet.svg") no-repeat;
+  }
+  .page-footer__develop {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
   }
 }
 @media (min-width: 1200px) {
@@ -2268,5 +2361,27 @@ img {
   .triangle-top {
     left: -130px;
     top: -3px;
+  }
+}
+.triangle-footer {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+  top: -1px;
+}
+@media (min-width: 700px) {
+  .triangle-footer {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .triangle-footer {
+    width: 1200px;
+  }
+}
+@media (min-width: 700px) {
+  .triangle-footer img {
+    width: 100%;
   }
 }

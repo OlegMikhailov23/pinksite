@@ -20,6 +20,9 @@
     .size (147px, 41px);
     background: url("../../img/logo-pink-blue-mobile.svg") no-repeat;
     font-size: 0;
+    &:hover {
+       background: url("../../img/logotype-white-tablet-hover.svg") no-repeat;
+    }
 }
 }
 
@@ -42,6 +45,13 @@
     border: 3px solid @border-color;
     border-radius: 50%;
     font-size: 0;
+  &:hover {
+    border-color: #283645;
+    transition: 0.3s;
+  }
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .page-footer__social-link:not(:last-of-type) {
@@ -54,8 +64,35 @@
 }
 
 .page-footer__link-tv {
-    background: url("../../img/icon-twitter.svg") center no-repeat;
-    
+    background: url("../../img/icon-twitter.svg") center no-repeat; 
+}
+
+.page-footer__link-fc {
+    background: url("../../img/icon-facebook.svg") center no-repeat; 
+}
+
+.page-footer__link-you {
+    background: url("../../img/icon-youtube.svg") center no-repeat; 
+}
+
+.page-footer__develop a {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 27px;
+    height: 35px;
+    font-size: 0;
+    background-image: url("../../img/htmlacademy.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover {
+      background-image: url("../../img/htmlacademy-hover.svg");
+    }
+}
+
+.page-footer__develop span {
+    position: relative;
+    bottom: 8px;
 }
 
 @media @tablet-widths {
@@ -75,7 +112,12 @@
   
   .page-footer__footer-logo {
       margin: 0;
-      background: url("../../img/logotype-blue-tablet.svg") no-repeat;
+  }
+  
+  .page-footer__develop {
+     margin: 0;
+     padding: 0;
+     padding-top: 5px;
   }
 }
 
