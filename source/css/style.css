@@ -818,18 +818,6 @@ img {
     width: 1200px;
   }
 }
-/*
-.reviews__wrapper::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 25px;
-    background-image: url("../../img/bg-triangle-white.svg");
-    background-size: cover;
-    bottom: -89px;
-    left: 0;
-}*/
 .reviews__promo-text,
 .reviews__auhor-detail {
   display: none;
@@ -944,27 +932,12 @@ img {
 #reviews-input-3:checked ~ .reviews__items .reviews__item:nth-child(3) {
   display: block;
 }
-.triangle {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  bottom: -37px;
-}
 @media (min-width: 700px) {
   .reviews__wrapper {
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: -60px;
   }
-  .triangle {
-    bottom: -59px;
-  }
-  /*
-  .reviews__wrapper::after {
-    background-size:  100% 1200px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }*/
   .reviews__promo-text {
     position: relative;
     display: block;
@@ -1117,8 +1090,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 65px;
-  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 .price__toggles .slider__toggle {
   background-color: #bec2c7;
@@ -1175,7 +1148,7 @@ img {
     transition: 0.4s;
   }
   .price__wrapper {
-    padding-top: 35px;
+    padding-top: 85px;
     padding-bottom: 68px;
   }
   .price__items {
@@ -1212,6 +1185,9 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .price__wrapper {
+    padding-top: 100px;
+  }
   .price__table-header {
     padding-left: 65px;
     padding-right: 65px;
@@ -2236,5 +2212,61 @@ img {
   .photo-editor__photo {
     margin-left: 80px;
     margin-right: 90px;
+  }
+}
+.triangle-bottom {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: -29px;
+}
+@media (min-width: 700px) {
+  .triangle-bottom {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .triangle-bottom {
+    width: 1200px;
+  }
+}
+@media (min-width: 700px) {
+  .triangle-bottom {
+    margin-bottom: -59px;
+  }
+}
+@media (min-width: 1200px) {
+  .triangle-bottom {
+    margin-bottom: -100px;
+  }
+}
+.triangle-top {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  margin-left: -20px;
+  top: -57px;
+}
+@media (min-width: 700px) {
+  .triangle-top {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .triangle-top {
+    width: 1200px;
+  }
+}
+@media (min-width: 700px) {
+  .triangle-top {
+    top: -28px;
+    left: -350px;
+  }
+}
+@media (min-width: 1200px) {
+  .triangle-top {
+    left: -130px;
+    top: -3px;
   }
 }

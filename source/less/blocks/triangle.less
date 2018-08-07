@@ -1,0 +1,44 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+
+.triangle-bottom {
+  .container();
+  position: relative;
+  background-color:transparent;
+  margin-bottom: -29px;
+}
+
+@media @tablet-widths {
+  .triangle-bottom {
+     margin-bottom: -59px;
+  }
+}
+
+@media @desktop-widths {
+  .triangle-bottom {
+     margin-bottom: -100px;
+  }
+}
+
+.triangle-top {
+  .container();
+  position: relative;
+  margin-left: -20px;
+  top: -57px;
+}
+
+@media @tablet-widths {
+  .triangle-top {
+    top: -28px;
+    left: -350px;
+  }
+}
+
+@media @desktop-widths {
+  .triangle-top {
+    left: -130px;
+    top: -3px;
+  }
+}
