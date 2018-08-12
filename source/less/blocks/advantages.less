@@ -55,6 +55,10 @@
     text-align: center;
 }
 
+.advantages__item-iphone-screen {
+  display: none;
+}
+
 .advantages__item p {
     .zero-style();
     .font-size (14px, 24px);
@@ -122,24 +126,34 @@
   }
   
   .advantages__item-list {
-      .padding-left-right (130px, 130px);
+      .padding-left-right (50px, 50px);
       padding-top: 0;
       text-align: center;
   }
   
+  .advantages__item-list-items {
+    .padding-left-right (50px, 50px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -145px;
+    z-index: 20;
+  }
+  
+  .advantages__item-iphone-screen {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      
+  }
+  
   .advantages__item {
-      display: inline-block;
-      vertical-align: top;
-      width: 229px;
+     max-width: 292px;
   }
   
   .advantages__item:nth-child(even) {
-      margin-right: 85px;
-      margin-left: 85px;
-  }
-  
-  .advantages__item:nth-child(n+1) {
-      padding-top: 260px;
+
   }
   
   .advantages__bottom-iphone {
@@ -149,6 +163,7 @@
   .advantages__item h3 {
       .font-size(30px, 32px);
       text-align: center;
+      .padding-left-right (3px, 3px);
   }
   
   .advantages__item p {

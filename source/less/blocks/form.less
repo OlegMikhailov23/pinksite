@@ -8,7 +8,6 @@
 }
 
 .form__wrapper {
-    .clearfix();
     position: relative;
     .container();
     .padding-top-bottom (50px, 0);
@@ -176,7 +175,7 @@
     display: block;
     width: 23px;
     height: 17px;
-    background: url("../../img/icon-yes.svg") no-repeat;
+    background: url("../../img/icon-yes-pink.svg") no-repeat;
     top: 10px;
     left: 7px;
 }
@@ -275,6 +274,12 @@
 }
 
 @media @tablet-widths {
+  .form__wrapper form {
+    display: flex;
+    flex-direction: column;
+    .padding-left-right (40px, 40px);
+  }
+  
     .form__title {
         .font-size (18px,
         30px);
@@ -287,57 +292,75 @@
         display: block;
         padding-bottom: 50px;
     }
-
-    .form__name-fields,
-    .form__proofs,
-    .form__contacts,
-    .form__whatapp,
-    .form__textfield,
-    .form__title {
-        .padding-left-right (40px,
-        40px);
-    }
-
-    .form__name-fields {
-        margin-bottom: 430px;
-    }
-
+  
+  .form__name-fields {
+    order: 1;
+    padding: 0;
+  }
+  
+  .form__whatapp {
+    order: 2;
+  }
+  
+  .form__contacts {
+    order: 3;
+  }
+  
+  .form__proofs {
+      order: 4;
+  }
+  
+  .form__textfield {
+    order: 5;
+  }
+  
+  .form__btn {
+    order: 6;
+  }
+  
+  .form__name-fields {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  
     .form__name-fields label {
-        display: block;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 50px;
     }
 
     .form__name-field {
-        width: 83%;
         margin-left: 20px;
-    }
-
-    .form__name-fields label:nth-child(2) .form__name-field {
-        width: 90%;
+        flex-grow: 1;
     }
 
     .form__whatapp {
-        position: absolute;
-        top: 460px;
-        left: 40px;
-        width: 88%;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
         background-color: transparent;
         border: 2px solid @border-color;
+        margin-bottom: 50px;
         & p {
+            .zero-style();
+            position: absolute;
+            display: inline-block;
+            text-align: center;
             background-color: #ffffff;
-            margin: 0 auto;
-            margin-top: -45px;
-            width: 65%;
+            .padding-left-right (30px, 30px); 
+            padding-bottom: 0;
+            left: 125px;
+            top: -10px;
         }
     }
 
     .form__proofs {
-        position: absolute;
-        top: 1150px;
-        left: 40px;
-        display: block;
-        width: 88%;
+        margin: 0 auto;
+        width: 100%;
         background-color: transparent;
         border: 2px solid @border-color;
+        margin-bottom: 50px;
     }
 
     .form__proofs .form__proofs-title {
@@ -361,12 +384,12 @@
 
     .form__contacts {
         margin: 0 auto;
-        width: 88%;
+        width: 100%;
         background-color: transparent;
         border: 2px solid @border-color;
-        margin-bottom: 685px;
+        margin-bottom: 50px;
         & p {
-            width: 45%;
+            .padding-left-right (30px, 30px);
             color: @contact-font-color;
             text-transform: uppercase;
             background-color: #ffffff;
@@ -381,8 +404,7 @@
 
     .form__textfield {
         margin: 0 auto;
-        width: 88%;
-        margin-top: 730px;
+        width: 100%;
         padding-top: 0;
         padding-bottom: 50px;
         border: 2px solid @border-color;
@@ -407,13 +429,11 @@
     }
 
     .form__btn {
-        float: left;
         margin-left: 40px;
     }
 
 
     .form__form-warning {
-        float: right;
         width: 180px;
         margin-right: 40px;
     }
