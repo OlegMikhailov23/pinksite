@@ -22,11 +22,14 @@
 .intro__header {
     .zero-style;
     .font-size (24px,
-    26px);
+    30px);
     color: @font-color-white;
     font-weight: 300;
     font-family: inherit;
     text-align: center;
+  & br {
+    display: none;
+  }
 }
 
 .intro__pic {
@@ -80,6 +83,10 @@
         background-image: url("../../img/iphone-hand-desktop@1x.png");
         background-size: 950px 545px;
   }
+}
+
+.intro__header br {
+  display: block;
 }
 
 @media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 700px) and (min-resolution: 144dpi) {
