@@ -438,7 +438,7 @@ img {
     width: 1200px;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
   .intro__wrapper {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
     background-size: 320px 462px;
@@ -470,7 +470,7 @@ img {
   height: 286px;
   background: url("../../img/iphone-hand-mobile@1x.png") center no-repeat;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
   .intro__pic {
     background-image: url("../../img/iphone-hand-mobile@2x.png");
     background-size: 258px 286px;
@@ -508,9 +508,9 @@ img {
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-size: 950px 545px;
   }
-}
-.intro__header br {
-  display: block;
+  .intro__header br {
+    display: block;
+  }
 }
 @media (min-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 700px) and (min-resolution: 144dpi) {
   .intro__wrapper {
@@ -619,6 +619,34 @@ img {
   .download-app__wrapper {
     position: absolute;
     left: 40px;
+    top: -545px;
+    width: 300px;
+    background-color: transparent;
+  }
+  .download-app__title {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    border-collapse: collapse;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 37px;
+    width: 190px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 300;
+  }
+  .download-app__btn {
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .download-app__wrapper {
+    position: absolute;
+    left: 50px;
     top: -545px;
     width: 300px;
     background-color: transparent;
@@ -1297,7 +1325,7 @@ img {
     width: 1200px;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
   .contacts {
     background-image: url("../../img/bg-map-mobile@2x.jpg");
     background-size: 320px 645px;
